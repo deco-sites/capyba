@@ -38,7 +38,7 @@ import * as i1$$$$$1 from "$live/flags/everyone.ts";
 
 const manifest = {
   "functions": {
-    "deco-sites/start/functions/LoadGitHubRaw.ts": $0,
+    "deco-sites/capyba/functions/LoadGitHubRaw.ts": $0,
   },
   "routes": {
     "./routes/_app.tsx": $$$$0,
@@ -56,8 +56,8 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i1$$$0,
     "$live/sections/Slot.tsx": i1$$$1,
     "$live/sections/UseSlot.tsx": i1$$$2,
-    "deco-sites/start/sections/GetStarted.tsx": $$$$$$$$1,
-    "deco-sites/start/sections/Head.tsx": $$$$$$$$0,
+    "deco-sites/capyba/sections/GetStarted.tsx": $$$$$$$$1,
+    "deco-sites/capyba/sections/Head.tsx": $$$$$$$$0,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i1$0,
