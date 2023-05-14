@@ -1,24 +1,122 @@
-/** @type {import('$fresh/plugins/twind').Options} */
-export default {
+import type { Options } from "$fresh/plugins/twind.ts";
+
+const options: Omit<Options, "selfURL"> = {
   theme: {
     extend: {
       screens: {
-        sm: "640px",
+        sm: "479px",
         md: "768px",
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
       },
       colors: {
-        primary: "#2FD180",
+        primary: "#141414",
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
         transparent: "transparent",
+        "footer": "#141414",
+        "subcolor": "#00e963",
+        "highlight": "#08a84c",
+        "highlight-light": "rgba(0,233,99,.25)",
+        "navlink": "#1a1b1f",
+        "navlink-hover": "rgba(26,27,31,.75)",
+        "menu-btn-hover": "rgba(0,233,99,.17)",
       },
       fontFamily: {
-        sans: ["Albert Sans", "sans-serif"],
+        sans: ["Montserrat", "sans-serif"],
+        grotesk: ["Space Grotesk", "sans-serif"],
         serif: ["serif"],
+        "webflow-icons": ["webflow-icons"],
+        "ibm-plex": ["IBM Plex Mono", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      boxShadow: {
+        header: "0 0 13px rgba(0,0,0,.2)",
+        "header-xl": "1px 1px 20px rgba(0,0,0,.05)",
+        menu: "0 8px 50px rgba(0,0,0,.05)",
       },
     },
   },
+  preflight: (preflight) => ({
+    ...preflight,
+    "@property --num": {
+      "syntax": "<integer>",
+      "initial-value": "0",
+      "inherits": "false",
+    },
+    // Prevent scroll when modal is open
+    "body.no-scroll": {
+      overflow: "hidden",
+      height: "100vh",
+    },
+  }),
+  plugins: {
+    "grid-footer": {
+      "display": "grid",
+      "grid-auto-columns": "1fr",
+      "grid-row-gap": "16px",
+      "grid-column-gap": "16px",
+      "object-fit": "fill",
+      "grid-template-rows": "auto",
+      "grid-template-columns": ".25fr 1fr",
+      "justify-content": "start",
+      "align-items": "start",
+    },
+    "grid-footer-second": {
+      "display": "grid",
+      "grid-auto-columns": "1fr",
+      "grid-row-gap": "16px",
+      "grid-column-gap": "16px",
+      "grid-template-rows": "auto",
+      "grid-template-columns": "4.25fr 1fr",
+      "align-content": "end",
+    },
+    "grid-footer-third": {
+      "display": "grid",
+      "grid-auto-columns": "1fr",
+      "grid-row-gap": "16px",
+      "grid-column-gap": "5px",
+      "grid-template-rows": "auto",
+      "grid-template-columns": "1fr 1fr 1fr",
+    },
+    "w-icon": {
+      "speak": "none",
+      " font-variant": "normal",
+      "text-transform": "none",
+      "-webkit-font-smoothing": "antialiased",
+      "-moz-osx-font-smoothing": "grayscale",
+      "font-style": "normal",
+      "font-weight": "400",
+      "line-height": "1",
+    },
+    "menu-xl": {
+      display: "flex",
+      "flex-direction": "column",
+      "align-items": "start",
+      "justify-content": "start",
+      "background-color": "#fafafa",
+      "margin-top": "0",
+      "border-radius": "0",
+      "height": "100vh",
+      "top": "0",
+      "left": "0",
+      "padding-top": "140px",
+      "transition": "left 100ms linear",
+      "gap": "16px",
+    },
+    "menu-list-xl": {
+      "width": "90%",
+      "grid-column-gap": "16px",
+      "grid-row-gap": "16px",
+      "grid-template-rows": "auto auto auto auto auto auto",
+      "grid-template-columns": "1fr",
+      "grid-auto-columns": "1fr",
+      "justify-items": "start",
+      "display": "grid",
+      "margin": "16px auto 0 auto",
+    },
+  },
 };
+
+export default options;
