@@ -13,6 +13,8 @@
           "not": {
             "enum": [
               "deco-sites/capyba/functions/LoadGitHubRaw.ts",
+              "./islands/Menu.tsx",
+              "./islands/MenuButton.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
               "$live/handlers/proxy.ts",
@@ -25,6 +27,7 @@
               "deco-sites/capyba/sections/Footer.tsx",
               "deco-sites/capyba/sections/GetStarted.tsx",
               "deco-sites/capyba/sections/Head.tsx",
+              "deco-sites/capyba/sections/Header.tsx",
               "$live/matchers/MatchAlways.ts",
               "$live/matchers/MatchDate.ts",
               "$live/matchers/MatchEnvironment.ts",
@@ -122,12 +125,30 @@
       "$ref": "#/root/handlers",
       "title": "Handler"
     },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler@record": {
-      "title": "Unknown record",
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route": {
       "type": "object",
-      "additionalProperties": {
-        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler"
-      }
+      "properties": {
+        "pathTemplate": {
+          "type": "string",
+          "title": "Path Template"
+        },
+        "handler": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler",
+          "title": "Handler"
+        }
+      },
+      "required": [
+        "pathTemplate",
+        "handler"
+      ],
+      "title": "Route"
+    },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route"
+      },
+      "title": "Route[]"
     },
     "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlci50cw==@RouterConfig": {
       "type": "object",
@@ -140,7 +161,7 @@
           "title": "Base"
         },
         "routes": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler@record",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
           "title": "Routes"
         }
       },
@@ -488,6 +509,99 @@
       ],
       "title": "deco-sites/capyba/sections/Head.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@TMenuButton": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        },
+        "highlight": {
+          "type": "boolean",
+          "title": "Highlight"
+        }
+      },
+      "required": [
+        "title",
+        "link",
+        "highlight"
+      ],
+      "title": "TMenuButton"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@TMenuButton[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@TMenuButton"
+      },
+      "title": "TMenuButton[]"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSGVhZGVyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "fixed": {
+          "type": "boolean",
+          "title": "Fixed"
+        },
+        "logo": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "width": {
+              "type": "number",
+              "title": "Width"
+            },
+            "height": {
+              "type": "number",
+              "title": "Height"
+            }
+          },
+          "required": [
+            "src",
+            "width",
+            "height"
+          ],
+          "title": "Logo"
+        },
+        "menuItems": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "url": {
+                "type": "string",
+                "title": "Url"
+              }
+            },
+            "required": [
+              "title",
+              "url"
+            ]
+          },
+          "title": "Menu Items"
+        },
+        "menuButtons": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@TMenuButton[]",
+          "title": "Menu Buttons"
+        }
+      },
+      "required": [
+        "fixed",
+        "logo",
+        "menuItems"
+      ],
+      "title": "deco-sites/capyba/sections/Header.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
       "properties": {
@@ -641,6 +755,31 @@
       "required": [],
       "title": "deco-cx/live/matchers/MatchUserAgent.ts@Props"
     },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override": {
+      "type": "object",
+      "properties": {
+        "use": {
+          "type": "string",
+          "title": "Use"
+        },
+        "insteadOf": {
+          "type": "string",
+          "title": "Instead Of"
+        }
+      },
+      "required": [
+        "use",
+        "insteadOf"
+      ],
+      "title": "Override"
+    },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override"
+      },
+      "title": "Override[]"
+    },
     "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Audience": {
       "type": "object",
       "properties": {
@@ -653,21 +792,17 @@
           "title": "Name"
         },
         "routes": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler@record",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
           "title": "Routes"
         },
         "overrides": {
-          "title": "Overrides",
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override[]",
+          "title": "Overrides"
         }
       },
       "required": [
         "matcher",
-        "name",
-        "routes"
+        "name"
       ],
       "title": "deco-cx/live/flags/audience.ts@Audience"
     },
@@ -675,15 +810,12 @@
       "type": "object",
       "properties": {
         "routes": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler@record",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
           "title": "Routes"
         },
         "overrides": {
-          "title": "Overrides",
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override[]",
+          "title": "Overrides"
         }
       },
       "required": [],
@@ -711,8 +843,41 @@
         }
       }
     },
+    "Li9pc2xhbmRzL01lbnUudHN4": {
+      "title": "./islands/Menu.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Menu.tsx"
+          ],
+          "default": "./islands/Menu.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL01lbnVCdXR0b24udHN4": {
+      "title": "./islands/MenuButton.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/MenuButton.tsx"
+          ],
+          "default": "./islands/MenuButton.tsx"
+        }
+      }
+    },
     "JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw==": {
-      "title": "$live/handlers/devPage.ts",
+      "title": "Private Fresh Page",
+      "description": "Useful for pages under development.",
       "type": "object",
       "allOf": [
         {
@@ -733,7 +898,8 @@
       }
     },
     "JGxpdmUvaGFuZGxlcnMvZnJlc2gudHM=": {
-      "title": "$live/handlers/fresh.ts",
+      "title": "Fresh Page",
+      "description": "Renders a fresh page.",
       "type": "object",
       "allOf": [
         {
@@ -754,7 +920,8 @@
       }
     },
     "JGxpdmUvaGFuZGxlcnMvcHJveHkudHM=": {
-      "title": "$live/handlers/proxy.ts",
+      "title": "Proxy Handler",
+      "description": "Proxies request to the target url.",
       "type": "object",
       "allOf": [
         {
@@ -796,7 +963,8 @@
       }
     },
     "JGxpdmUvaGFuZGxlcnMvcm91dGVzU2VsZWN0aW9uLnRz": {
-      "title": "$live/handlers/routesSelection.ts",
+      "title": "Routes Selection",
+      "description": "Select routes based on the target audience.",
       "type": "object",
       "allOf": [
         {
@@ -960,6 +1128,27 @@
             "deco-sites/capyba/sections/Head.tsx"
           ],
           "default": "deco-sites/capyba/sections/Head.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSGVhZGVyLnRzeA==": {
+      "title": "deco-sites/capyba/sections/Header.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSGVhZGVyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/Header.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/Header.tsx"
         }
       }
     },
@@ -1127,7 +1316,8 @@
       }
     },
     "JGxpdmUvZmxhZ3MvYXVkaWVuY2UudHM=": {
-      "title": "$live/flags/audience.ts",
+      "title": "Audience",
+      "description": "Select routes based on the matched audience.",
       "type": "object",
       "allOf": [
         {
@@ -1148,7 +1338,8 @@
       }
     },
     "JGxpdmUvZmxhZ3MvZXZlcnlvbmUudHM=": {
-      "title": "$live/flags/everyone.ts",
+      "title": "Audience Everyone",
+      "description": "Always match regardless of the current user",
       "type": "object",
       "allOf": [
         {
@@ -1214,6 +1405,20 @@
         }
       ]
     },
+    "islands": {
+      "title": "islands",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL01lbnUudHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL01lbnVCdXR0b24udHN4"
+        }
+      ]
+    },
     "handlers": {
       "title": "handlers",
       "anyOf": [
@@ -1271,6 +1476,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSGVhZC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSGVhZGVyLnRzeA=="
         }
       ]
     },
@@ -1361,6 +1569,9 @@
         "anyOf": [
           {
             "$ref": "#/root/functions"
+          },
+          {
+            "$ref": "#/root/islands"
           },
           {
             "$ref": "#/root/handlers"

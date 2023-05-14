@@ -1,0 +1,13 @@
+<svg>
+
+<symbol id="MenuBars" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <rect width="14" height="15" fill="url(#pattern0)"/>
+    <defs>
+    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <use xlink:href="#image0_1_4" transform="scale(0.0714286 0.0666667)"/>
+    </pattern>
+    <image id="image0_1_4" width="14" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAYAAADUFP50AAAAiElEQVQ4jWNkeJF0gIGR0Z6BaPD/AwPbP0Mm4jXAACMj6XqGJkB49GVyAMN/hnwidU1kgXP+MzgwMDI4EKXx//+NqEH7KsGAgZFFAL+mPx8YxBZcIMqCwQEYGV4kFTAwMPqToOMDA+PfRhYGRsYGBgYGfpKs+8d0kIWB7a8Bwx8WBZI0svy9AABOnR4/giu32AAAAABJRU5ErkJggg=="/>
+    </defs>
+</symbol>
+
+</svg>
