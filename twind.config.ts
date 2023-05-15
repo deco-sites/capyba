@@ -1,25 +1,40 @@
-/** @type {import('$fresh/plugins/twind').Options} */
-export default {
+import type { Options } from "$fresh/plugins/twind.ts";
+
+const options: Omit<Options, "selfURL"> = {
   theme: {
     extend: {
       screens: {
-        sm: "640px",
+        sm: "479px",
         md: "768px",
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
       },
       colors: {
-        primary: "#2FD180",
+        primary: "#141414",
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
         transparent: "transparent",
         "footer": "#141414",
         "subcolor": "#00e963",
+        "highlight": "#08a84c",
+        "highlight-light": "rgba(0,233,99,.25)",
+        "navlink": "#1a1b1f",
+        "navlink-hover": "rgba(26,27,31,.75)",
+        "menu-btn-hover": "rgba(0,233,99,.17)",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
+        grotesk: ["Space Grotesk", "sans-serif"],
         serif: ["serif"],
+        "webflow-icons": ["webflow-icons"],
+        "ibm-plex": ["IBM Plex Mono", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      boxShadow: {
+        header: "0 0 13px rgba(0,0,0,.2)",
+        "header-xl": "1px 1px 20px rgba(0,0,0,.05)",
+        menu: "0 8px 50px rgba(0,0,0,.05)",
       },
       gridTemplateColumns: {
         "footerMobile": "1.5fr 1.75fr;",
@@ -27,6 +42,19 @@ export default {
       },
     },
   },
+  preflight: (preflight) => ({
+    ...preflight,
+    "@property --num": {
+      "syntax": "<integer>",
+      "initial-value": "0",
+      "inherits": "false",
+    },
+    // Prevent scroll when modal is open
+    "body.no-scroll": {
+      overflow: "hidden",
+      height: "100vh",
+    },
+  }),
   plugins: {
     "grid-footer": {
       "display": "grid",
@@ -51,12 +79,12 @@ export default {
       "display": "grid",
       "grid-auto-columns": "1fr",
       "grid-row-gap": "16px",
-      "grid-column-gap": "5px",
+      "grid-column-gap": "35px",
       "grid-template-rows": "auto",
       "grid-template-columns": "1fr 1fr 1fr",
     },
     "grid-footer-third-mobile": {
-      "grid-column-gap": "40px",
+      "grid-column-gap": "50px",
       "grid-row-gap": "16px",
       "grid-template-rows": "auto",
       "grid-template-columns": "1fr 1fr 1fr",
@@ -68,5 +96,43 @@ export default {
       "margin-right": "auto",
       "display": "grid",
     },
+    "w-icon": {
+      "speak": "none",
+      " font-variant": "normal",
+      "text-transform": "none",
+      "-webkit-font-smoothing": "antialiased",
+      "-moz-osx-font-smoothing": "grayscale",
+      "font-style": "normal",
+      "font-weight": "400",
+      "line-height": "1",
+    },
+    "menu-xl": {
+      display: "flex",
+      "flex-direction": "column",
+      "align-items": "start",
+      "justify-content": "start",
+      "background-color": "#fafafa",
+      "margin-top": "0",
+      "border-radius": "0",
+      "height": "100vh",
+      "top": "0",
+      "left": "0",
+      "padding-top": "140px",
+      "transition": "left 100ms linear",
+      "gap": "16px",
+    },
+    "menu-list-xl": {
+      "width": "90%",
+      "grid-column-gap": "16px",
+      "grid-row-gap": "16px",
+      "grid-template-rows": "auto auto auto auto auto auto",
+      "grid-template-columns": "1fr",
+      "grid-auto-columns": "1fr",
+      "justify-items": "start",
+      "display": "grid",
+      "margin": "16px auto 0 auto",
+    },
   },
 };
+
+export default options;
