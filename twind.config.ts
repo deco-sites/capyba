@@ -21,6 +21,10 @@ export default {
         sans: ["Montserrat", "sans-serif"],
         serif: ["serif"],
       },
+      gridTemplateColumns: {
+        "footerMobile": "1.5fr 1.75fr;",
+        "footerDesk": ".25fr 1fr;",
+      },
     },
   },
   plugins: {
@@ -31,7 +35,6 @@ export default {
       "grid-column-gap": "16px",
       "object-fit": "fill",
       "grid-template-rows": "auto",
-      "grid-template-columns": ".25fr 1fr",
       "justify-content": "start",
       "align-items": "start",
     },
@@ -51,6 +54,19 @@ export default {
       "grid-column-gap": "5px",
       "grid-template-rows": "auto",
       "grid-template-columns": "1fr 1fr 1fr",
+    },
+    "grid-footer-third-mobile": {
+      "grid-column-gap": "40px",
+      "grid-row-gap": "16px",
+      "grid-template-rows": "auto",
+      "grid-template-columns": "1fr 1fr 1fr",
+      "grid-auto-columns": "1fr",
+      "grid-auto-flow": "row",
+      "align-content": "start",
+      "justify-content": "space-around",
+      "margin-left": "auto",
+      "margin-right": "auto",
+      "display": "grid",
     },
   },
 };
