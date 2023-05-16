@@ -22,6 +22,9 @@ const options: Omit<Options, "selfURL"> = {
         "navlink": "#1a1b1f",
         "navlink-hover": "rgba(26,27,31,.75)",
         "menu-btn-hover": "rgba(0,233,99,.17)",
+        "input": "#999",
+        "chk-active": "rgba(0,233,99,.2)",
+        "select": "#f3f3f3",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
@@ -35,6 +38,15 @@ const options: Omit<Options, "selfURL"> = {
         header: "0 0 13px rgba(0,0,0,.2)",
         "header-xl": "1px 1px 20px rgba(0,0,0,.05)",
         menu: "0 8px 50px rgba(0,0,0,.05)",
+        "close-btn": "3px 5px 20px -3px rgba(0,0,0,.3)",
+      },
+      fontSize: {
+        title: ["32px", "39px"],
+      },
+      borderColor: {
+        input: "#ccc",
+        focus: "#3898ec",
+        checkbox: "#f0f0f0",
       },
     },
   },
@@ -115,6 +127,18 @@ const options: Omit<Options, "selfURL"> = {
       "justify-items": "start",
       "display": "grid",
       "margin": "16px auto 0 auto",
+    },
+    "chk-group": {
+      "> input:checked + div": {
+        "background-color": "#00e963",
+        "border-color": "#00e963",
+        "box-shadow": "0 0 15px -1px #00e963",
+        "background-image":
+          "url(https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg)",
+        "background-position": "50%",
+        "background-repeat": "no-repeat",
+        "background-size": "cover",
+      },
     },
   },
 };
