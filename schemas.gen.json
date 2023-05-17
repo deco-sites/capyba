@@ -13,6 +13,7 @@
           "not": {
             "enum": [
               "deco-sites/capyba/functions/LoadGitHubRaw.ts",
+              "./islands/FirstSection.tsx",
               "./islands/Menu.tsx",
               "./islands/MenuButton.tsx",
               "$live/handlers/devPage.ts",
@@ -28,6 +29,7 @@
               "deco-sites/capyba/sections/GetStarted.tsx",
               "deco-sites/capyba/sections/Head.tsx",
               "deco-sites/capyba/sections/Header.tsx",
+              "deco-sites/capyba/sections/InteractiveBanner.tsx",
               "$live/matchers/MatchAlways.ts",
               "$live/matchers/MatchDate.ts",
               "$live/matchers/MatchEnvironment.ts",
@@ -68,6 +70,34 @@
         "path"
       ],
       "title": "deco-sites/capyba/functions/LoadGitHubRaw.ts@Props"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvY29tcG9uZW50cy9GaXJzdFNlY3Rpb24udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "btnText": {
+          "type": "string",
+          "title": "Btn Text"
+        },
+        "backgroundImg": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Img"
+        }
+      },
+      "required": [
+        "text",
+        "btnText",
+        "backgroundImg"
+      ],
+      "title": "deco-sites/capyba/components/FirstSection.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page": {
       "$ref": "#/root/pages",
@@ -346,11 +376,6 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
-      "type": "string",
-      "format": "image-uri",
-      "title": "Image"
-    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -602,6 +627,29 @@
       ],
       "title": "deco-sites/capyba/sections/Header.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "btnText": {
+          "type": "string",
+          "title": "Btn Text"
+        },
+        "backgroundImg": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Img"
+        }
+      },
+      "required": [
+        "text",
+        "btnText",
+        "backgroundImg"
+      ],
+      "title": "deco-sites/capyba/sections/InteractiveBanner.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
       "properties": {
@@ -840,6 +888,27 @@
             "deco-sites/capyba/functions/LoadGitHubRaw.ts"
           ],
           "default": "deco-sites/capyba/functions/LoadGitHubRaw.ts"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL0ZpcnN0U2VjdGlvbi50c3g=": {
+      "title": "./islands/FirstSection.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvY29tcG9uZW50cy9GaXJzdFNlY3Rpb24udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/FirstSection.tsx"
+          ],
+          "default": "./islands/FirstSection.tsx"
         }
       }
     },
@@ -1152,6 +1221,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXIudHN4": {
+      "title": "deco-sites/capyba/sections/InteractiveBanner.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/InteractiveBanner.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/InteractiveBanner.tsx"
+        }
+      }
+    },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
       "title": "$live/matchers/MatchAlways.ts",
       "type": "object",
@@ -1412,6 +1502,9 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0ZpcnN0U2VjdGlvbi50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL01lbnUudHN4"
         },
         {
@@ -1479,6 +1572,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSGVhZGVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXIudHN4"
         }
       ]
     },

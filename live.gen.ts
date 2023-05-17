@@ -6,12 +6,14 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/Menu.tsx";
-import * as $$$$$1 from "./islands/MenuButton.tsx";
+import * as $$$$$0 from "./islands/FirstSection.tsx";
+import * as $$$$$1 from "./islands/Menu.tsx";
+import * as $$$$$2 from "./islands/MenuButton.tsx";
 import * as $$$$$$$$0 from "./sections/Footer.tsx";
 import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
 import * as $$$$$$$$2 from "./sections/Head.tsx";
 import * as $$$$$$$$3 from "./sections/Header.tsx";
+import * as $$$$$$$$4 from "./sections/InteractiveBanner.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -57,8 +59,9 @@ const manifest = {
     "./routes/live/workbench.ts": $live_workbench,
   },
   "islands": {
-    "./islands/Menu.tsx": $$$$$0,
-    "./islands/MenuButton.tsx": $$$$$1,
+    "./islands/FirstSection.tsx": $$$$$0,
+    "./islands/Menu.tsx": $$$$$1,
+    "./islands/MenuButton.tsx": $$$$$2,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i1$$$0,
@@ -68,6 +71,7 @@ const manifest = {
     "deco-sites/capyba/sections/GetStarted.tsx": $$$$$$$$1,
     "deco-sites/capyba/sections/Head.tsx": $$$$$$$$2,
     "deco-sites/capyba/sections/Header.tsx": $$$$$$$$3,
+    "deco-sites/capyba/sections/InteractiveBanner.tsx": $$$$$$$$4,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i1$0,

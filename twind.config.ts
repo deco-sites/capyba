@@ -5,7 +5,7 @@ const options: Omit<Options, "selfURL"> = {
     extend: {
       screens: {
         sm: "479px",
-        md: "768px",
+        md: "991px",
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
@@ -26,6 +26,7 @@ const options: Omit<Options, "selfURL"> = {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
         grotesk: ["Space Grotesk", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
         serif: ["serif"],
         "webflow-icons": ["webflow-icons"],
         "ibm-plex": ["IBM Plex Mono", "sans-serif"],
@@ -35,6 +36,10 @@ const options: Omit<Options, "selfURL"> = {
         header: "0 0 13px rgba(0,0,0,.2)",
         "header-xl": "1px 1px 20px rgba(0,0,0,.05)",
         menu: "0 8px 50px rgba(0,0,0,.05)",
+      },
+      backgroundSize: {
+        "bgFirst": "88%",
+        "bgFirstDesk": "50%",
       },
     },
   },
@@ -115,6 +120,9 @@ const options: Omit<Options, "selfURL"> = {
       "justify-items": "start",
       "display": "grid",
       "margin": "16px auto 0 auto",
+    },
+    "backdropFilter": {
+      "backdrop-filter": "blur(6px)",
     },
   },
 };
