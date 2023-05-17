@@ -25,6 +25,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/capyba/sections/Assistance.tsx",
               "deco-sites/capyba/sections/Footer.tsx",
               "deco-sites/capyba/sections/GetStarted.tsx",
               "deco-sites/capyba/sections/Head.tsx",
@@ -375,6 +376,34 @@
         "sections"
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNzaXN0YW5jZS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "desktopContent": {
+          "type": "string",
+          "title": "Desktop Content"
+        },
+        "mobileContent": {
+          "type": "string",
+          "title": "Mobile Content"
+        },
+        "mainImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Main Image"
+        }
+      },
+      "required": [
+        "title",
+        "desktopContent",
+        "mobileContent",
+        "mainImage"
+      ],
+      "title": "deco-sites/capyba/sections/Assistance.tsx@Props"
     },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Props": {
       "type": "object",
@@ -1137,6 +1166,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNzaXN0YW5jZS50c3g=": {
+      "title": "deco-sites/capyba/sections/Assistance.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNzaXN0YW5jZS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/Assistance.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/Assistance.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9vdGVyLnRzeA==": {
       "title": "deco-sites/capyba/sections/Footer.tsx",
       "type": "object",
@@ -1560,6 +1610,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNzaXN0YW5jZS50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9vdGVyLnRzeA=="

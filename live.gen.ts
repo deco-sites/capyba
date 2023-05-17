@@ -9,11 +9,12 @@ import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/FirstSection.tsx";
 import * as $$$$$1 from "./islands/Menu.tsx";
 import * as $$$$$2 from "./islands/MenuButton.tsx";
-import * as $$$$$$$$0 from "./sections/Footer.tsx";
-import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
-import * as $$$$$$$$2 from "./sections/Head.tsx";
-import * as $$$$$$$$3 from "./sections/Header.tsx";
-import * as $$$$$$$$4 from "./sections/InteractiveBanner.tsx";
+import * as $$$$$$$$0 from "./sections/Assistance.tsx";
+import * as $$$$$$$$1 from "./sections/Footer.tsx";
+import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$3 from "./sections/Head.tsx";
+import * as $$$$$$$$4 from "./sections/Header.tsx";
+import * as $$$$$$$$5 from "./sections/InteractiveBanner.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -67,11 +68,12 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i1$$$0,
     "$live/sections/Slot.tsx": i1$$$1,
     "$live/sections/UseSlot.tsx": i1$$$2,
-    "deco-sites/capyba/sections/Footer.tsx": $$$$$$$$0,
-    "deco-sites/capyba/sections/GetStarted.tsx": $$$$$$$$1,
-    "deco-sites/capyba/sections/Head.tsx": $$$$$$$$2,
-    "deco-sites/capyba/sections/Header.tsx": $$$$$$$$3,
-    "deco-sites/capyba/sections/InteractiveBanner.tsx": $$$$$$$$4,
+    "deco-sites/capyba/sections/Assistance.tsx": $$$$$$$$0,
+    "deco-sites/capyba/sections/Footer.tsx": $$$$$$$$1,
+    "deco-sites/capyba/sections/GetStarted.tsx": $$$$$$$$2,
+    "deco-sites/capyba/sections/Head.tsx": $$$$$$$$3,
+    "deco-sites/capyba/sections/Header.tsx": $$$$$$$$4,
+    "deco-sites/capyba/sections/InteractiveBanner.tsx": $$$$$$$$5,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i1$0,
