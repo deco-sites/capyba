@@ -5,7 +5,7 @@ const options: Omit<Options, "selfURL"> = {
     extend: {
       screens: {
         sm: "479px",
-        md: "768px",
+        md: "991px",
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
@@ -25,6 +25,12 @@ const options: Omit<Options, "selfURL"> = {
         "input": "#999",
         "chk-active": "rgba(0,233,99,.2)",
         "select": "#f3f3f3",
+        "card-highlight": "rgba(0,233,99,.17)",
+        "card-highlight-hover": "rgba(0,233,99,.45)",
+        "card-action": "rgba(0,233,99,.5)",
+        "card-bg-highlight-hover": "#effcef",
+        "list-item": "#e3e3e3",
+        "button-blank": "#ededed"
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
@@ -39,6 +45,7 @@ const options: Omit<Options, "selfURL"> = {
         "header-xl": "1px 1px 20px rgba(0,0,0,.05)",
         menu: "0 8px 50px rgba(0,0,0,.05)",
         "close-btn": "3px 5px 20px -3px rgba(0,0,0,.3)",
+        "card": "0 0 20px 2px rgba(0,0,0,.07)",
       },
       fontSize: {
         title: ["32px", "39px"],
@@ -47,6 +54,10 @@ const options: Omit<Options, "selfURL"> = {
         input: "#ccc",
         focus: "#3898ec",
         checkbox: "#f0f0f0",
+      },
+      gridTemplateColumns: {
+        "careers-cards-sm": "1fr 1fr",
+        "careers-cards": "2fr 1.25fr 1.25fr 1.25fr",
       },
     },
   },
@@ -139,6 +150,21 @@ const options: Omit<Options, "selfURL"> = {
         "background-repeat": "no-repeat",
         "background-size": "cover",
       },
+    },
+    "pattern-careers": {
+      "background-position": "50%",
+      "background-repeat": "repeat",
+      "background-size": "20%",
+      "background-attachment": "fixed",
+      "background-clip": "border-box",
+    },
+    "container-hero": {
+      "width": "100%",
+      "max-width": "1296px",
+      "margin-left": "auto",
+      "margin-right": "auto",
+      "padding-left": "24px",
+      "padding-right": "24px",
     },
   },
 };
