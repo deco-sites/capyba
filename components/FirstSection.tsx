@@ -14,7 +14,7 @@ export default function FirstSection({ text, btnText, backgroundImg }: Props) {
 
   return (
     <div class={`${displayBanner ? "block" : "hidden"} mx-[20px] sm:mx-0`}>
-      <div class="mt-[60px] mx-auto max-w-[728px] md:max-w-[940px]">
+      <div class="mt-[60px] mx-auto max-w-[728px] md:max-w-[940px] md:mb-[20px]">
         <div
           style={{
             backgroundImage: `url(${backgroundImg})`,

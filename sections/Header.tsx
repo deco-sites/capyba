@@ -13,10 +13,14 @@ export interface Props {
 
 export default function Header({ logo, fixed, menuItems, menuButtons }: Props) {
   return (
-    <header class="flex relative justify-center items-center bg-white shadow-header xl:shadow-header-xl p-5 w-full">
+    <header
+      class={`flex ${
+        fixed ? "fixed z-1" : "relative"
+      } justify-center items-center bg-white shadow-header xl:shadow-header-xl p-5 w-full`}
+    >
       <Menu menuItems={menuItems} buttons={menuButtons} />
       <div class="flex relative justify-center items-center w-full xl:justify-between">
-          <MenuButton />
+        <MenuButton />
         <a class="xl:relative xl:z-10" title="Logo" href="/">
           <Image
             class="max-w-[90%] mt-[3px] xl:max-w-full xl:mt-0"

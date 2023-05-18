@@ -1,4 +1,7 @@
 <svg>
+    <symbol id="ChevronLeft" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 5L5 12L12 19M19 12H6H19Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 
 <symbol id="MenuBars" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <rect width="14" height="15" fill="url(#pattern0)"/>
@@ -19,4 +22,8 @@
 <defs><style>.cls-1{fill:none;stroke:#ea4e53;stroke-linecap:square;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:#ea4e53;}</style></defs><g id="Camada_1-2"><g><line class="cls-1" x1="2.5" y1="32.92" x2="164.13" y2="32.92"/><polygon class="cls-2" points="137.46 65.84 131.97 59.94 161.04 32.92 131.97 5.9 137.46 0 172.86 32.92 137.46 65.84"/></g></g>
 </symbol>
 
+    <symbol id="Close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6L6 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 6L18 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 </svg>

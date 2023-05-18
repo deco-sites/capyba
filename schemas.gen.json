@@ -25,12 +25,18 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/capyba/sections/Aside.tsx",
               "deco-sites/capyba/sections/Assistance.tsx",
+              "deco-sites/capyba/sections/Cards.tsx",
+              "deco-sites/capyba/sections/CareersFooter.tsx",
+              "deco-sites/capyba/sections/CloseButton.tsx",
               "deco-sites/capyba/sections/Footer.tsx",
+              "deco-sites/capyba/sections/Form.tsx",
               "deco-sites/capyba/sections/GetStarted.tsx",
               "deco-sites/capyba/sections/Head.tsx",
               "deco-sites/capyba/sections/Header.tsx",
               "deco-sites/capyba/sections/InteractiveBanner.tsx",
+              "deco-sites/capyba/sections/Pattern.tsx",
               "$live/matchers/MatchAlways.ts",
               "$live/matchers/MatchDate.ts",
               "$live/matchers/MatchEnvironment.ts",
@@ -377,6 +383,48 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNpZGUudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "clientsImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Clients Image"
+        },
+        "visibility": {
+          "type": "object",
+          "properties": {
+            "mobile": {
+              "type": "boolean",
+              "title": "Mobile"
+            },
+            "desktop": {
+              "type": "boolean",
+              "title": "Desktop"
+            }
+          },
+          "required": [
+            "mobile",
+            "desktop"
+          ],
+          "title": "Visibility"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "title": "Background Color"
+        }
+      },
+      "required": [
+        "title",
+        "clientsImage",
+        "visibility",
+        "backgroundColor"
+      ],
+      "title": "deco-sites/capyba/sections/Aside.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNzaXN0YW5jZS50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -404,6 +452,148 @@
         "mainImage"
       ],
       "title": "deco-sites/capyba/sections/Assistance.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZHMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "icon": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Icon"
+              },
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "description": {
+                "type": "string",
+                "title": "Description"
+              },
+              "highlight": {
+                "type": "boolean",
+                "title": "Highlight"
+              },
+              "action": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "title": "Text"
+                  },
+                  "mobileText": {
+                    "type": "string",
+                    "title": "Mobile Text"
+                  },
+                  "link": {
+                    "type": "string",
+                    "title": "Link"
+                  }
+                },
+                "required": [
+                  "text",
+                  "mobileText",
+                  "link"
+                ],
+                "title": "Action"
+              }
+            },
+            "required": [
+              "title",
+              "description",
+              "highlight"
+            ]
+          },
+          "title": "Cards"
+        }
+      },
+      "required": [
+        "cards"
+      ],
+      "title": "deco-sites/capyba/sections/Cards.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZWVyc0Zvb3Rlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Paragraphs"
+        },
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "level": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "Júnior"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Pleno"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Senior"
+                  }
+                ],
+                "type": "string",
+                "title": "Level"
+              },
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "link": {
+                "type": "string",
+                "title": "Link"
+              }
+            },
+            "required": [
+              "level",
+              "title",
+              "link"
+            ]
+          },
+          "title": "Cards"
+        }
+      },
+      "required": [
+        "title",
+        "paragraphs",
+        "cards"
+      ],
+      "title": "deco-sites/capyba/sections/CareersFooter.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2xvc2VCdXR0b24udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        }
+      },
+      "required": [
+        "text",
+        "link"
+      ],
+      "title": "deco-sites/capyba/sections/CloseButton.tsx@Props"
     },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Props": {
       "type": "object",
@@ -503,6 +693,148 @@
       ],
       "title": "deco-sites/capyba/sections/Footer.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@TInput": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "text"
+            },
+            {
+              "type": "string",
+              "const": "checkbox"
+            },
+            {
+              "type": "string",
+              "const": "option"
+            }
+          ],
+          "type": "string",
+          "title": "Type"
+        },
+        "required": {
+          "type": "boolean",
+          "title": "Required"
+        },
+        "placeholder": {
+          "type": "string",
+          "title": "Placeholder"
+        },
+        "disabled": {
+          "type": "boolean",
+          "title": "Disabled"
+        },
+        "selected": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Selected"
+        },
+        "hideInMobile": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Hide In Mobile"
+        },
+        "hideInDesktop": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Hide In Desktop"
+        }
+      },
+      "required": [
+        "type",
+        "required",
+        "placeholder",
+        "disabled"
+      ],
+      "title": "TInput"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@TInput[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@TInput"
+      },
+      "title": "TInput[]"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@IFormGroup": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "style": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "select"
+            },
+            {
+              "type": "string",
+              "const": "inputs"
+            }
+          ],
+          "type": "string",
+          "title": "Style"
+        },
+        "inputs": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@TInput[]",
+          "title": "Inputs"
+        }
+      },
+      "required": [
+        "title",
+        "style",
+        "inputs"
+      ],
+      "title": "IFormGroup"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@IFormGroup[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@IFormGroup"
+      },
+      "title": "IFormGroup[]"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9ybS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "formGroups": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvdHlwZXMvaW5kZXgudHM=@IFormGroup[]",
+          "title": "Form Groups"
+        },
+        "submit": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "title": "Text"
+            },
+            "action": {
+              "type": "string",
+              "title": "Action"
+            }
+          },
+          "required": [
+            "text",
+            "action"
+          ],
+          "title": "Submit"
+        }
+      },
+      "required": [
+        "formGroups",
+        "submit"
+      ],
+      "title": "deco-sites/capyba/sections/Form.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvR2V0U3RhcnRlZC50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -550,6 +882,20 @@
         "themeColor": {
           "type": "string",
           "title": "Theme Color"
+        },
+        "bodyBackgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Body Background Color"
+        },
+        "bodyBackgroundColorMobile": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Body Background Color Mobile"
         }
       },
       "required": [
@@ -678,6 +1024,19 @@
         "backgroundImg"
       ],
       "title": "deco-sites/capyba/sections/InteractiveBanner.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGF0dGVybi50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        }
+      },
+      "required": [
+        "image"
+      ],
+      "title": "deco-sites/capyba/sections/Pattern.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
@@ -1166,6 +1525,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNpZGUudHN4": {
+      "title": "deco-sites/capyba/sections/Aside.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNpZGUudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/Aside.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/Aside.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNzaXN0YW5jZS50c3g=": {
       "title": "deco-sites/capyba/sections/Assistance.tsx",
       "type": "object",
@@ -1187,6 +1567,69 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZHMudHN4": {
+      "title": "deco-sites/capyba/sections/Cards.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZHMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/Cards.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/Cards.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZWVyc0Zvb3Rlci50c3g=": {
+      "title": "deco-sites/capyba/sections/CareersFooter.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZWVyc0Zvb3Rlci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/CareersFooter.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/CareersFooter.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2xvc2VCdXR0b24udHN4": {
+      "title": "deco-sites/capyba/sections/CloseButton.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2xvc2VCdXR0b24udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/CloseButton.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/CloseButton.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9vdGVyLnRzeA==": {
       "title": "deco-sites/capyba/sections/Footer.tsx",
       "type": "object",
@@ -1205,6 +1648,27 @@
             "deco-sites/capyba/sections/Footer.tsx"
           ],
           "default": "deco-sites/capyba/sections/Footer.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9ybS50c3g=": {
+      "title": "deco-sites/capyba/sections/Form.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9ybS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/Form.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/Form.tsx"
         }
       }
     },
@@ -1289,6 +1753,27 @@
             "deco-sites/capyba/sections/InteractiveBanner.tsx"
           ],
           "default": "deco-sites/capyba/sections/InteractiveBanner.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGF0dGVybi50c3g=": {
+      "title": "deco-sites/capyba/sections/Pattern.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGF0dGVybi50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/Pattern.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/Pattern.tsx"
         }
       }
     },
@@ -1612,10 +2097,25 @@
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNpZGUudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNzaXN0YW5jZS50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZHMudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZWVyc0Zvb3Rlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2xvc2VCdXR0b24udHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9vdGVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9ybS50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvR2V0U3RhcnRlZC50c3g="
@@ -1628,6 +2128,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGF0dGVybi50c3g="
         }
       ]
     },
