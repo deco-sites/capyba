@@ -5,6 +5,7 @@ const options: Omit<Options, "selfURL"> = {
     extend: {
       screens: {
         sm: "479px",
+        ml: "767px",
         md: "991px",
         lg: "1024px",
         xl: "1280px",
@@ -61,6 +62,8 @@ const options: Omit<Options, "selfURL"> = {
         "careers-cards-sm": "1fr 1fr",
         "careers-cards": "2fr 1.25fr 1.25fr 1.25fr",
         "Assistance": ".75fr 1fr",
+        "marcas": "1fr 1fr 1fr",
+        "marcasDesk": "1fr 1fr 1fr 1fr 1fr 1fr",
       },
       backgroundSize: {
         "bgFirst": "88%",

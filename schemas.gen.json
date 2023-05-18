@@ -36,7 +36,9 @@
               "deco-sites/capyba/sections/Head.tsx",
               "deco-sites/capyba/sections/Header.tsx",
               "deco-sites/capyba/sections/InteractiveBanner.tsx",
+              "deco-sites/capyba/sections/Marcas.tsx",
               "deco-sites/capyba/sections/Pattern.tsx",
+              "deco-sites/capyba/sections/WorkTogether.tsx",
               "$live/matchers/MatchAlways.ts",
               "$live/matchers/MatchDate.ts",
               "$live/matchers/MatchEnvironment.ts",
@@ -1025,6 +1027,46 @@
       ],
       "title": "deco-sites/capyba/sections/InteractiveBanner.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvTWFyY2FzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "banners": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "src": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Src"
+              },
+              "width": {
+                "type": "number",
+                "title": "Width"
+              },
+              "height": {
+                "type": "number",
+                "title": "Height"
+              },
+              "link": {
+                "type": "string",
+                "title": "Link"
+              }
+            },
+            "required": [
+              "src",
+              "width",
+              "height",
+              "link"
+            ]
+          },
+          "title": "Banners"
+        }
+      },
+      "required": [
+        "banners"
+      ],
+      "title": "deco-sites/capyba/sections/Marcas.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGF0dGVybi50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -1037,6 +1079,34 @@
         "image"
       ],
       "title": "deco-sites/capyba/sections/Pattern.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvV29ya1RvZ2V0aGVyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "subTitle": {
+          "type": "string",
+          "title": "Sub Title"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        },
+        "backgroundImg": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Img"
+        }
+      },
+      "required": [
+        "title",
+        "subTitle",
+        "link",
+        "backgroundImg"
+      ],
+      "title": "deco-sites/capyba/sections/WorkTogether.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
@@ -1756,6 +1826,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvTWFyY2FzLnRzeA==": {
+      "title": "deco-sites/capyba/sections/Marcas.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvTWFyY2FzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/Marcas.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/Marcas.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGF0dGVybi50c3g=": {
       "title": "deco-sites/capyba/sections/Pattern.tsx",
       "type": "object",
@@ -1774,6 +1865,27 @@
             "deco-sites/capyba/sections/Pattern.tsx"
           ],
           "default": "deco-sites/capyba/sections/Pattern.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvV29ya1RvZ2V0aGVyLnRzeA==": {
+      "title": "deco-sites/capyba/sections/WorkTogether.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvV29ya1RvZ2V0aGVyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/WorkTogether.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/WorkTogether.tsx"
         }
       }
     },
@@ -2130,7 +2242,13 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvSW50ZXJhY3RpdmVCYW5uZXIudHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvTWFyY2FzLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGF0dGVybi50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvV29ya1RvZ2V0aGVyLnRzeA=="
         }
       ]
     },
