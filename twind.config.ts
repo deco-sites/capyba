@@ -30,11 +30,12 @@ const options: Omit<Options, "selfURL"> = {
         "card-action": "rgba(0,233,99,.5)",
         "card-bg-highlight-hover": "#effcef",
         "list-item": "#e3e3e3",
-        "button-blank": "#ededed"
+        "button-blank": "#ededed",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
         grotesk: ["Space Grotesk", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
         serif: ["serif"],
         "webflow-icons": ["webflow-icons"],
         "ibm-plex": ["IBM Plex Mono", "sans-serif"],
@@ -46,6 +47,7 @@ const options: Omit<Options, "selfURL"> = {
         menu: "0 8px 50px rgba(0,0,0,.05)",
         "close-btn": "3px 5px 20px -3px rgba(0,0,0,.3)",
         "card": "0 0 20px 2px rgba(0,0,0,.07)",
+        "assistancedesk": "inset 100px 0 100px 100px rgba(0,232,97,.32)",
       },
       fontSize: {
         title: ["32px", "39px"],
@@ -58,6 +60,11 @@ const options: Omit<Options, "selfURL"> = {
       gridTemplateColumns: {
         "careers-cards-sm": "1fr 1fr",
         "careers-cards": "2fr 1.25fr 1.25fr 1.25fr",
+        "Assistance": ".75fr 1fr",
+      },
+      backgroundSize: {
+        "bgFirst": "88%",
+        "bgFirstDesk": "50%",
       },
     },
   },
@@ -138,6 +145,9 @@ const options: Omit<Options, "selfURL"> = {
       "justify-items": "start",
       "display": "grid",
       "margin": "16px auto 0 auto",
+    },
+    "backdropFilter": {
+      "backdrop-filter": "blur(6px)",
     },
     "chk-group": {
       "> input:checked + div": {
