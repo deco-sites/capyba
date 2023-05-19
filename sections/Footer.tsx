@@ -33,7 +33,8 @@ export default function Footer({
             <h2
               class="mb-6 text-right text-white font-bold font-sans text-[34px] sm:text-[54px] leading-[38px] sm:leading-[55px]"
               dangerouslySetInnerHTML={{ __html: title }}
-            ></h2>
+            >
+            </h2>
             <h3 class="text-right mb-[60px] sm:mb-[140px] font-sans text-[13px] sm:text-[29px] text-subcolor font-bold">
               {subTitle}
             </h3>
