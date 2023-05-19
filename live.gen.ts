@@ -24,9 +24,11 @@ import * as $$$$$$$$10 from "./sections/Head.tsx";
 import * as $$$$$$$$11 from "./sections/Header.tsx";
 import * as $$$$$$$$12 from "./sections/InteractiveBanner.tsx";
 import * as $$$$$$$$13 from "./sections/Marcas.tsx";
-import * as $$$$$$$$14 from "./sections/Pattern.tsx";
-import * as $$$$$$$$15 from "./sections/Posts.tsx";
-import * as $$$$$$$$16 from "./sections/WorkTogether.tsx";
+import * as $$$$$$$$14 from "./sections/PageTitle.tsx";
+import * as $$$$$$$$15 from "./sections/Pattern.tsx";
+import * as $$$$$$$$16 from "./sections/Posts.tsx";
+import * as $$$$$$$$17 from "./sections/TextWithDescription.tsx";
+import * as $$$$$$$$18 from "./sections/WorkTogether.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -95,9 +97,11 @@ const manifest = {
     "deco-sites/capyba/sections/Header.tsx": $$$$$$$$11,
     "deco-sites/capyba/sections/InteractiveBanner.tsx": $$$$$$$$12,
     "deco-sites/capyba/sections/Marcas.tsx": $$$$$$$$13,
-    "deco-sites/capyba/sections/Pattern.tsx": $$$$$$$$14,
-    "deco-sites/capyba/sections/Posts.tsx": $$$$$$$$15,
-    "deco-sites/capyba/sections/WorkTogether.tsx": $$$$$$$$16,
+    "deco-sites/capyba/sections/PageTitle.tsx": $$$$$$$$14,
+    "deco-sites/capyba/sections/Pattern.tsx": $$$$$$$$15,
+    "deco-sites/capyba/sections/Posts.tsx": $$$$$$$$16,
+    "deco-sites/capyba/sections/TextWithDescription.tsx": $$$$$$$$17,
+    "deco-sites/capyba/sections/WorkTogether.tsx": $$$$$$$$18,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i1$0,

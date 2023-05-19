@@ -1,10 +1,28 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
-  title: string;
+  title: {
+    fontSize: number;
+    lineHeight: number;
+    mobileFontSize: number;
+    mobileLineHeight: number;
+    text: string;
+    margin: string;
+    mobileMargin: string;
+  };
+  containerPadding: {
+    top: number;
+    right: number;
+    bottom: number;
+    left: number;
+    mobileTop: number;
+    mobileRight: number;
+    mobileBottom: number;
+    mobileLeft: number;
+  };
   subTitle: string;
   link: string;
-  backgroundImg: LiveImage;
+  backgroundImg?: LiveImage;
 }
 
 export default function WorkTogether({
@@ -12,20 +30,28 @@ export default function WorkTogether({
   subTitle,
   backgroundImg,
   link,
+  containerPadding,
 }: Props) {
   return (
     <div
       style={{
-        backgroundImage: `url(${backgroundImg})`,
+        backgroundImage: backgroundImg && `url(${backgroundImg})`,
       }}
-      class="bg-[100%] bg-scroll ml:bg-fixed bg-no-repeat bg-auto py-[200px] ml:py-[400px]"
+      class={`bg-[100%] bg-scroll ml:bg-fixed bg-no-repeat bg-auto pt-[${containerPadding.mobileTop}px] pr-[${containerPadding.mobileRight}px] pb-[${containerPadding.mobileBottom}px] pl-[${containerPadding.mobileLeft}px] ml:pt-[${containerPadding.top}px] ml:pr-[${containerPadding.right}px] ml:pb-[${containerPadding.bottom}px] ml:pl-[${containerPadding.left}px]`}
     >
       <div class="max-w-[1296px] mx-[10px] sm:mx-auto">
         <div class="max-w-[800px] mx-auto w-full">
           <div class="block sm:flex sm:flex-col text-center">
-            <h3 class="font-sans font-bold text-[36px] sm:text-[54px] leading-[39px] sm:leading-[54px] mb-[18px]">
-              {title}
-            </h3>
+            <h3
+              style={{ margin: title.mobileMargin }}
+              class={`block ml:hidden font-sans font-bold text-[${title.mobileFontSize}px] ml:text-[${title.fontSize}px] leading-[${title.mobileLineHeight}px] ml:leading-[${title.lineHeight}px]`}
+              dangerouslySetInnerHTML={{ __html: title.text }}
+            />
+            <h3
+              style={{ margin: title.margin }}
+              class={`hidden ml:block font-sans font-bold text-[${title.mobileFontSize}px] ml:text-[${title.fontSize}px] leading-[${title.mobileLineHeight}px] ml:leading-[${title.lineHeight}px]`}
+              dangerouslySetInnerHTML={{ __html: title.text }}
+            />
             <div class="flex items-center">
               <a
                 href={link}
