@@ -215,6 +215,18 @@ const options: Omit<Options, "selfURL"> = {
     "forPosts": {
       "backgroundImage": "linear-gradient(transparent,#000)",
     },
+    "hoverPosts": {
+      "transform":
+        "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+      "transform-style": "preserve-3d",
+      "transition": "transform 300ms ease-in-out",
+    },
+    "hoverPostsFinal": {
+      "transform":
+        "translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+      "transform-style": "preserve-3d",
+      "transition": "transform 300ms ease-in-out",
+    },
     "use-cover": {
       "background-image":
         "url(https://uploads-ssl.webflow.com/6012be071bbf1d798713214d/60151a2990529cf457828564_Caminho%201026.png)",
