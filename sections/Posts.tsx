@@ -109,18 +109,22 @@ export default function Posts({
         </div>
       </div>
 
-      <div>
+      <div class="my-[40px]">
         <div class="mt-[80px] pt-[40px] flex items-center justify-center flex-col text-center">
           <a
-            class="bg-posts rounded-[30px] py-2.5 px-[60px]"
+            class="bg-posts sm:bg-transparent rounded-[30px] py-2.5 px-[60px]"
             href={linkViewMore}
           >
-            <div class="my-auto inline-block pr-0 font-semibold font-sans">
+            <div class="my-auto inline-block pr-0 font-semibold sm:font-normal font-sans sm:text-[20px]">
               {viewMore}
             </div>
             <img
-              class="h-[21px] pt-[5px] float-right"
+              class="h-[21px] pt-[5px] float-right sm:hidden"
               src="/white-arrow-right.png"
+            />
+            <img
+              class="h-[21px] pt-[5px] pl-[20px] float-right hidden sm:block"
+              src="/green-arrow-right.png"
             />
           </a>
         </div>
