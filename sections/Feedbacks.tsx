@@ -47,7 +47,7 @@ export default function Feedbacks({
           >
             <div class="py-[20px] pl-[20px] md:pt-[60px] md:pl-[40px] md:pb-[20px] mt-[30px] sm:mt-0 rounded-[30px] md:rounded-[60px] max-w-[610px] bg-white shadow-feedbacks">
               <img
-                class="block mr-[-19px] mt-[-40px] w-[50px] float-right sm:hidden md:block md:relative md:bottom-[49px] md:w-max"
+                class="block mt-[-40px] w-[50px] float-right sm:hidden md:block md:relative md:bottom-[49px] md:w-max"
                 src="/depoimento-icon.png"
               />
               <div class="mt-auto w-auto sm:w-[90%] text-justify py-[10px] pr-[10px] sm:p-0 text-[16px] sm:text-[20px] leading-[24px] leading-[33px] text-primary font-sans font-normal">
