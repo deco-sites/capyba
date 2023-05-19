@@ -5,6 +5,7 @@ const options: Omit<Options, "selfURL"> = {
     extend: {
       screens: {
         sm: "479px",
+        ml: "767px",
         md: "991px",
         lg: "1024px",
         xl: "1280px",
@@ -31,6 +32,7 @@ const options: Omit<Options, "selfURL"> = {
         "card-bg-highlight-hover": "#effcef",
         "list-item": "#e3e3e3",
         "button-blank": "#ededed",
+        "posts": "rgba(221,221,221,.5)",
         "light-grey": "rgba(221,221,221,.5)",
         "dots": "rgba(34,34,34,.4)",
         "dots-active": "#222",
@@ -51,6 +53,7 @@ const options: Omit<Options, "selfURL"> = {
         "close-btn": "3px 5px 20px -3px rgba(0,0,0,.3)",
         "card": "0 0 20px 2px rgba(0,0,0,.07)",
         "assistancedesk": "inset 100px 0 100px 100px rgba(0,232,97,.32)",
+        "feedbacks": "1px 1px 50px -10px rgba(0,0,0,.2)",
       },
       fontSize: {
         title: ["32px", "39px"],
@@ -64,8 +67,11 @@ const options: Omit<Options, "selfURL"> = {
         "careers-cards-sm": "1fr 1fr",
         "careers-cards": "2fr 1.25fr 1.25fr 1.25fr",
         "Assistance": ".75fr 1fr",
+        "marcas": "1fr 1fr 1fr",
+        "marcasDesk": "1fr 1fr 1fr 1fr 1fr 1fr",
         "footerMobile": "1.5fr 1.75fr;",
         "footerDesk": ".25fr 1fr;",
+        "postsMobile": "1fr",
       },
       backgroundSize: {
         "bgFirst": "88%",
@@ -126,6 +132,19 @@ const options: Omit<Options, "selfURL"> = {
       "margin-left": "auto",
       "margin-right": "auto",
       "display": "grid",
+    },
+    "grid-posts-mobile": {
+      "display": "grid",
+      "grid-column-gap": "24px",
+      "grid-row-gap": "24px",
+      "grid-auto-columns": "1fr",
+      "z-index": "1",
+    },
+    "grid-column-none": {
+      "grid-column-gap": "0",
+    },
+    "grid-column-six": {
+      "grid-column-gap": "16px",
     },
     "w-icon": {
       "speak": "none",
@@ -192,6 +211,9 @@ const options: Omit<Options, "selfURL"> = {
       "margin-right": "auto",
       "padding-left": "24px",
       "padding-right": "24px",
+    },
+    "forPosts": {
+      "backgroundImage": "linear-gradient(transparent,#000)",
     },
     "use-cover": {
       "background-image":

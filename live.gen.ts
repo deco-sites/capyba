@@ -16,13 +16,17 @@ import * as $$$$$$$$2 from "./sections/Cards.tsx";
 import * as $$$$$$$$3 from "./sections/CareersFooter.tsx";
 import * as $$$$$$$$4 from "./sections/Cases.tsx";
 import * as $$$$$$$$5 from "./sections/CloseButton.tsx";
-import * as $$$$$$$$6 from "./sections/Footer.tsx";
-import * as $$$$$$$$7 from "./sections/Form.tsx";
-import * as $$$$$$$$8 from "./sections/GetStarted.tsx";
-import * as $$$$$$$$9 from "./sections/Head.tsx";
-import * as $$$$$$$$10 from "./sections/Header.tsx";
-import * as $$$$$$$$11 from "./sections/InteractiveBanner.tsx";
-import * as $$$$$$$$12 from "./sections/Pattern.tsx";
+import * as $$$$$$$$6 from "./sections/Feedbacks.tsx";
+import * as $$$$$$$$7 from "./sections/Footer.tsx";
+import * as $$$$$$$$8 from "./sections/Form.tsx";
+import * as $$$$$$$$9 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$10 from "./sections/Head.tsx";
+import * as $$$$$$$$11 from "./sections/Header.tsx";
+import * as $$$$$$$$12 from "./sections/InteractiveBanner.tsx";
+import * as $$$$$$$$13 from "./sections/Marcas.tsx";
+import * as $$$$$$$$14 from "./sections/Pattern.tsx";
+import * as $$$$$$$$15 from "./sections/Posts.tsx";
+import * as $$$$$$$$16 from "./sections/WorkTogether.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -83,13 +87,17 @@ const manifest = {
     "deco-sites/capyba/sections/CareersFooter.tsx": $$$$$$$$3,
     "deco-sites/capyba/sections/Cases.tsx": $$$$$$$$4,
     "deco-sites/capyba/sections/CloseButton.tsx": $$$$$$$$5,
-    "deco-sites/capyba/sections/Footer.tsx": $$$$$$$$6,
-    "deco-sites/capyba/sections/Form.tsx": $$$$$$$$7,
-    "deco-sites/capyba/sections/GetStarted.tsx": $$$$$$$$8,
-    "deco-sites/capyba/sections/Head.tsx": $$$$$$$$9,
-    "deco-sites/capyba/sections/Header.tsx": $$$$$$$$10,
-    "deco-sites/capyba/sections/InteractiveBanner.tsx": $$$$$$$$11,
-    "deco-sites/capyba/sections/Pattern.tsx": $$$$$$$$12,
+    "deco-sites/capyba/sections/Feedbacks.tsx": $$$$$$$$6,
+    "deco-sites/capyba/sections/Footer.tsx": $$$$$$$$7,
+    "deco-sites/capyba/sections/Form.tsx": $$$$$$$$8,
+    "deco-sites/capyba/sections/GetStarted.tsx": $$$$$$$$9,
+    "deco-sites/capyba/sections/Head.tsx": $$$$$$$$10,
+    "deco-sites/capyba/sections/Header.tsx": $$$$$$$$11,
+    "deco-sites/capyba/sections/InteractiveBanner.tsx": $$$$$$$$12,
+    "deco-sites/capyba/sections/Marcas.tsx": $$$$$$$$13,
+    "deco-sites/capyba/sections/Pattern.tsx": $$$$$$$$14,
+    "deco-sites/capyba/sections/Posts.tsx": $$$$$$$$15,
+    "deco-sites/capyba/sections/WorkTogether.tsx": $$$$$$$$16,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i1$0,
