@@ -37,7 +37,7 @@ export default function WorkTogether({
       style={{
         backgroundImage: backgroundImg && `url(${backgroundImg})`,
       }}
-      class={`bg-[100%] bg-fixed bg-no-repeat bg-auto pt-[${containerPadding.mobileTop}px] pr-[${containerPadding.mobileRight}px] pb-[${containerPadding.mobileBottom}px] pl-[${containerPadding.mobileLeft}px] ml:pt-[${containerPadding.top}px] ml:pr-[${containerPadding.right}px] ml:pb-[${containerPadding.bottom}px] ml:pl-[${containerPadding.left}px]`}
+      class={`bg-[100%] bg-scroll ml:bg-fixed bg-no-repeat bg-auto pt-[${containerPadding.mobileTop}px] pr-[${containerPadding.mobileRight}px] pb-[${containerPadding.mobileBottom}px] pl-[${containerPadding.mobileLeft}px] ml:pt-[${containerPadding.top}px] ml:pr-[${containerPadding.right}px] ml:pb-[${containerPadding.bottom}px] ml:pl-[${containerPadding.left}px]`}
     >
       <div class="max-w-[1296px] mx-[10px] sm:mx-auto">
         <div class="max-w-[800px] mx-auto w-full">
