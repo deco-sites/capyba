@@ -14,7 +14,9 @@ export default function CloseButton({ text, link }: Props) {
       >
         <Icon class="block sm:hidden" id="ChevronLeft" size={24} />
         <Icon class="hidden sm:block" id="Close" size={24} />
-        <span class="block flex-1 font-sans font-semibold sm:hidden">{text}</span>
+        <span class="block flex-1 font-sans font-semibold sm:hidden">
+          {text}
+        </span>
       </a>
     </div>
   );

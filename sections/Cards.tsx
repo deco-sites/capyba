@@ -66,7 +66,9 @@ export default function Cards({ cards }: Props) {
               card.noBorder
                 ? "font-sans text-[16px] leading-[24px] sm:text-[20px] sm:leading-[33px]"
                 : "font-poppins text-[16px]"
-            } ${card.highlight ? "text-left p-0 leading-[24px]" : "sm:w-[90%]"}`}
+            } ${
+              card.highlight ? "text-left p-0 leading-[24px]" : "sm:w-[90%]"
+            }`}
             dangerouslySetInnerHTML={{ __html: card.description }}
           />
           {card.action && card.action.text.trim().length > 0 && (
