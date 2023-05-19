@@ -7,7 +7,7 @@ export interface Props {
 
 export default function Marcas({ banners }: Props) {
   return (
-    <div class="ml:max-w-[1296px] ml:mx-auto ml:px-[24px]">
+    <div class="ml:max-w-[1296px] ml:mx-auto ml:px-[24px] ml:pt-[40px]">
       <div class="grid-footer-second grid-cols-marcas ml:grid-cols-marcasDesk">
         {banners?.map((banners) => {
           return (

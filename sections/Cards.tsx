@@ -3,14 +3,26 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
   cards: {
+    /** @description Card side image icon */
     icon?: LiveImage;
+    /** @description Card title */
     title: string;
+    /** @description Card description */
     description: string;
+    /** @description Is card highlighted */
     highlight: boolean;
+    /** @description Transparent background card */
+    noBorder?: boolean;
+
     action?: {
+      /** @description Desktop button text */
       text: string;
+      /** @description Mobile button text */
       mobileText: string;
+      /** @description Action button link */
       link: string;
+      /** @description Custom background color on mobile */
+      mobileBackgroundColor?: string;
     };
   }[];
 }
@@ -20,10 +32,18 @@ export default function Cards({ cards }: Props) {
     <div class="mt-[20px] mx-[30px] flex flex-col gap-[24px] sm:grid sm:grid-cols-careers-cards-sm md:container-hero md:grid md:gap-[24px] md:grid-cols-careers-cards md:mt-[40px]">
       {cards.map((card) => (
         <div
-          class={`bg-white rounded-[20px] h-auto w-full pt-[40px] px-[20px] pb-[18px] sm:max-h-[500px] ${
+          class={`bg-white rounded-[20px] h-auto w-full ${
+            !card.noBorder && "pt-[40px] px-[20px] pb-[18px]"
+          } sm:max-h-[500px] ${
             card.highlight
-              ? "border-2 border-solid border-card-highlight hover:border-card-highlight-hover hover:bg-card-bg-highlight-hover sm:p-[36px] hover:shadow-card"
-              : "shadow-card hover:bg-transparent sm:hover:bg-white sm:pl-[40px] sm:pr-[20px] sm:flex sm:flex-col sm:justify-center sm:items-center"
+              ? `${
+                !card.noBorder &&
+                "border-2 border-solid border-card-highlight hover:border-card-highlight-hover hover:bg-card-bg-highlight-hover"
+              } sm:p-[36px] hover:shadow-card`
+              : `${
+                !card.noBorder &&
+                "shadow-card hover:bg-transparent sm:hover:bg-white sm:pl-[40px] sm:pr-[20px]"
+              } sm:flex sm:flex-col sm:justify-center`
           }`}
         >
           {card.icon && (
@@ -32,23 +52,32 @@ export default function Cards({ cards }: Props) {
             </div>
           )}
           <h2
-            class={`mt-[40px] text-center font-sans sm:text-left mb-[24px] text-primary font-bold ${
+            class={`${
+              !card.noBorder && "mt-[40px]"
+            } text-center font-sans sm:text-left mb-[24px] text-primary font-bold ${
               card.highlight
                 ? "text-left m-0 mb-[24px] text-[28px] leading-[32px] sm:font-grotesk sm:mt-0"
                 : "text-[32px] leading-[45px] sm:text-[46px]"
             }`}
-          >
-            {card.title}
-          </h2>
+            dangerouslySetInnerHTML={{ __html: card.title }}
+          />
           <p
-            class={`block mb-[24px] font-poppins text-[16px] leading-[32px] text-justify sm:text-left px-[10px] pt-[10px] sm:p-0 font-normal ${
-              card.highlight ? "text-left p-0 leading-[24px]" : ""
+            class={`block mb-[24px] leading-[32px] text-justify sm:text-left px-[10px] pt-[10px] sm:p-0 font-normal ${
+              card.noBorder
+                ? "font-sans text-[16px] leading-[24px] sm:text-[20px] sm:leading-[33px]"
+                : "font-poppins text-[16px]"
+            } ${
+              card.highlight ? "text-left p-0 leading-[24px]" : "sm:w-[90%]"
             }`}
             dangerouslySetInnerHTML={{ __html: card.description }}
           />
-          {card.action && (
+          {card.action && card.action.text.trim().length > 0 && (
             <a
-              class="bg-card-action sm:bg-transparent rounded-[30px] py-[10px] px-[20px] block text-center sm:text-left sm:p-0 sm:relative sm:w-max sm:flex sm:items-center group"
+              class={`${
+                card.action.mobileBackgroundColor
+                  ? `bg-[${card.action.mobileBackgroundColor}]`
+                  : "bg-card-action"
+              } sm:bg-transparent rounded-[30px] py-[10px] px-[20px] block text-center sm:text-left sm:p-0 sm:relative sm:w-max sm:flex sm:items-center group`}
               href={card.action?.link}
             >
               <span class="inline-block sm:hidden text-primary font-sans font-semibold">

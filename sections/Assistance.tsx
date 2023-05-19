@@ -21,7 +21,8 @@ export default function Assistance({
             <h1
               class="text-left text-primary text-[39px] sm:text-[70px] leading-[48px] sm:leading-[70px] font-sans font-bold sm:font-semibold pl-[20px] md:pl-0 pt-0 mt-[40px] sm:mt-[100px]"
               dangerouslySetInnerHTML={{ __html: title }}
-            ></h1>
+            >
+            </h1>
             <div class="hidden sm:block">
               <div class="flex items-center mt-[20px]">
                 <a class="text-white items-center cursor-pointer text-center rounded-[40px] bg-transparent font-ibm-plex font-semibold flex py-[12px] px-[24px] md:pl-0 md:hover:shadow-assistancedesk md:hover:pl-[24px]">

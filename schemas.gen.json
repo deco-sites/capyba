@@ -30,6 +30,7 @@
               "deco-sites/capyba/sections/Cards.tsx",
               "deco-sites/capyba/sections/CareersFooter.tsx",
               "deco-sites/capyba/sections/CloseButton.tsx",
+              "deco-sites/capyba/sections/Feedbacks.tsx",
               "deco-sites/capyba/sections/Footer.tsx",
               "deco-sites/capyba/sections/Form.tsx",
               "deco-sites/capyba/sections/GetStarted.tsx",
@@ -479,6 +480,13 @@
                 "type": "boolean",
                 "title": "Highlight"
               },
+              "noBorder": {
+                "type": [
+                  "boolean",
+                  "null"
+                ],
+                "title": "No Border"
+              },
               "action": {
                 "type": "object",
                 "properties": {
@@ -493,6 +501,13 @@
                   "link": {
                     "type": "string",
                     "title": "Link"
+                  },
+                  "mobileBackgroundColor": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "title": "Mobile Background Color"
                   }
                 },
                 "required": [
@@ -596,6 +611,44 @@
         "link"
       ],
       "title": "deco-sites/capyba/sections/CloseButton.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRmVlZGJhY2tzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "mainImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Main Image"
+        },
+        "content": {
+          "type": "string",
+          "title": "Content"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        },
+        "redirectTo": {
+          "type": "string",
+          "title": "Redirect To"
+        }
+      },
+      "required": [
+        "title",
+        "mainImage",
+        "content",
+        "name",
+        "link",
+        "redirectTo"
+      ],
+      "title": "deco-sites/capyba/sections/Feedbacks.tsx@Props"
     },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Props": {
       "type": "object",
@@ -1700,6 +1753,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRmVlZGJhY2tzLnRzeA==": {
+      "title": "deco-sites/capyba/sections/Feedbacks.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRmVlZGJhY2tzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/Feedbacks.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/Feedbacks.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9vdGVyLnRzeA==": {
       "title": "deco-sites/capyba/sections/Footer.tsx",
       "type": "object",
@@ -2222,6 +2296,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2xvc2VCdXR0b24udHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRmVlZGJhY2tzLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRm9vdGVyLnRzeA=="
