@@ -40,21 +40,21 @@ export default function Posts({
       <div class="max-w-[800px] pt-[20px] pb-2.5 mx-auto w-full">
         <div class="block sm:flex justify-center items-center text-center">
           <h5
-            class="text-primary text-center pt-[140px] px-[10px] text-[32px] sm:text-[40px] leading-[36px] sm:leading-[44px] font-sans font-bold pb-[100px]"
+            class="text-primary text-center pt-[140px] px-[10px] text-[32px] sm:text-[40px] leading-[36px] sm:leading-[44px] md:text-[54px] md:leading-[54px] font-sans font-bold pb-[100px]"
             dangerouslySetInnerHTML={{ __html: title }}
           ></h5>
         </div>
       </div>
 
       <div class="w-auto h-auto px-[24px]">
-        <div class="relative z-[1] max-w-[612px] mx-auto grid-posts-mobile grid-cols-postsMobile">
-          <div class="justify-self-center self-stretch">
+        <div class="relative z-[1] max-w-[612px] mx-auto grid-posts-mobile grid-cols-postsMobile md:grid-cols-careers-cards-sm md:max-w-none">
+          <div class="group justify-self-center self-stretch">
             <a
               class="h-full rounded-[8px] overflow-hidden flex relative"
               href={link1}
             >
               <img
-                class="w-full h-full object-cover relative "
+                class="hoverPosts group-hover:hoverPostsFinal w-full h-full object-cover relative "
                 src={img1}
               ></img>
               <div class="z-[1] w-full text-white p-[36px] absolute bottom-0">
@@ -73,17 +73,17 @@ export default function Posts({
                   {content1}
                 </h3>
               </div>
-              <div class="bg-primary h-[70%] w-full absolute bottom-0 opacity-90 forPosts bg-transparent"></div>
+              <div class="group-hover:h-[100%] transition-all bg-primary h-[70%] w-full absolute bottom-0 opacity-90 forPosts bg-transparent"></div>
             </a>
           </div>
-          <div>
+          <div class="group">
             <div class="justify-self-center self-stretch">
               <a
                 class="h-full rounded-[8px] overflow-hidden flex relative"
                 href={link2}
               >
                 <img
-                  class="w-full h-full object-cover relative "
+                  class="hoverPosts group-hover:hoverPostsFinal w-full h-full object-cover relative "
                   src={img2}
                 ></img>
                 <div class="z-[1] w-full text-white p-[36px] absolute bottom-0">
@@ -102,7 +102,7 @@ export default function Posts({
                     {content2}
                   </h3>
                 </div>
-                <div class="bg-primary h-[70%] w-full absolute bottom-0 opacity-90 forPosts bg-transparent"></div>
+                <div class="group-hover:h-[100%] transition-all bg-primary h-[70%] w-full absolute bottom-0 opacity-90 forPosts bg-transparent"></div>
               </a>
             </div>
           </div>
