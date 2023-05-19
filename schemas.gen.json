@@ -16,6 +16,7 @@
               "./islands/FirstSection.tsx",
               "./islands/Menu.tsx",
               "./islands/MenuButton.tsx",
+              "./islands/SliderJS.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
               "$live/handlers/proxy.ts",
@@ -29,6 +30,7 @@
               "deco-sites/capyba/sections/Assistance.tsx",
               "deco-sites/capyba/sections/Cards.tsx",
               "deco-sites/capyba/sections/CareersFooter.tsx",
+              "deco-sites/capyba/sections/Cases.tsx",
               "deco-sites/capyba/sections/CloseButton.tsx",
               "deco-sites/capyba/sections/Feedbacks.tsx",
               "deco-sites/capyba/sections/Footer.tsx",
@@ -594,6 +596,92 @@
         "cards"
       ],
       "title": "deco-sites/capyba/sections/CareersFooter.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FzZXMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "cases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "image": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Image"
+              },
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "description": {
+                "type": "string",
+                "title": "Description"
+              },
+              "techs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "image": {
+                      "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                      "title": "Image"
+                    },
+                    "width": {
+                      "type": "number",
+                      "title": "Width"
+                    },
+                    "height": {
+                      "type": "number",
+                      "title": "Height"
+                    }
+                  },
+                  "required": [
+                    "image",
+                    "width",
+                    "height"
+                  ]
+                },
+                "title": "Techs"
+              },
+              "action": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "title": "Text"
+                  },
+                  "link": {
+                    "type": "string",
+                    "title": "Link"
+                  }
+                },
+                "required": [
+                  "text",
+                  "link"
+                ],
+                "title": "Action"
+              }
+            },
+            "required": [
+              "image",
+              "title",
+              "description",
+              "techs",
+              "action"
+            ]
+          },
+          "title": "Cases"
+        }
+      },
+      "required": [
+        "title",
+        "cases"
+      ],
+      "title": "deco-sites/capyba/sections/Cases.tsx@Props"
     },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2xvc2VCdXR0b24udHN4@Props": {
       "type": "object",
@@ -1539,6 +1627,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1NsaWRlckpTLnRzeA==": {
+      "title": "./islands/SliderJS.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/SliderJS.tsx"
+          ],
+          "default": "./islands/SliderJS.tsx"
+        }
+      }
+    },
     "JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw==": {
       "title": "Private Fresh Page",
       "description": "Useful for pages under development.",
@@ -1813,6 +1917,27 @@
             "deco-sites/capyba/sections/CareersFooter.tsx"
           ],
           "default": "deco-sites/capyba/sections/CareersFooter.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FzZXMudHN4": {
+      "title": "deco-sites/capyba/sections/Cases.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FzZXMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/Cases.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/Cases.tsx"
         }
       }
     },
@@ -2335,6 +2460,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL01lbnVCdXR0b24udHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpTLnRzeA=="
         }
       ]
     },
@@ -2398,6 +2526,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZWVyc0Zvb3Rlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FzZXMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2xvc2VCdXR0b24udHN4"

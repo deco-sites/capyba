@@ -33,6 +33,9 @@ const options: Omit<Options, "selfURL"> = {
         "list-item": "#e3e3e3",
         "button-blank": "#ededed",
         "posts": "rgba(221,221,221,.5)",
+        "light-grey": "rgba(221,221,221,.5)",
+        "dots": "rgba(34,34,34,.4)",
+        "dots-active": "#222",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
@@ -211,6 +214,26 @@ const options: Omit<Options, "selfURL"> = {
     },
     "forPosts": {
       "backgroundImage": "linear-gradient(transparent,#000)",
+    },
+    "use-cover": {
+      "background-image":
+        "url(https://uploads-ssl.webflow.com/6012be071bbf1d798713214d/60151a2990529cf457828564_Caminho%201026.png)",
+      "background-position": "0 0",
+      "background-repeat": "no-repeat",
+      "background-size": "contain",
+      "background-origin": "content-box",
+    },
+    "grid-cases": {
+      "grid-column-gap": "16px",
+      "grid-row-gap": "16px",
+      "grid-template-rows": "auto",
+      "grid-template-columns": ".75fr 1fr",
+      "grid-auto-columns": "1fr",
+      "grid-auto-flow": "row",
+      "justify-content": "stretch",
+      "align-items": "center",
+      "justify-items": "center",
+      "display": "grid",
     },
   },
 };
