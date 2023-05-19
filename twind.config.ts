@@ -32,6 +32,7 @@ const options: Omit<Options, "selfURL"> = {
         "card-bg-highlight-hover": "#effcef",
         "list-item": "#e3e3e3",
         "button-blank": "#ededed",
+        "posts": "rgba(221,221,221,.5)",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
@@ -67,6 +68,7 @@ const options: Omit<Options, "selfURL"> = {
         "marcasDesk": "1fr 1fr 1fr 1fr 1fr 1fr",
         "footerMobile": "1.5fr 1.75fr;",
         "footerDesk": ".25fr 1fr;",
+        "postsMobile": "1fr",
       },
       backgroundSize: {
         "bgFirst": "88%",
@@ -127,6 +129,13 @@ const options: Omit<Options, "selfURL"> = {
       "margin-left": "auto",
       "margin-right": "auto",
       "display": "grid",
+    },
+    "grid-posts-mobile": {
+      "display": "grid",
+      "grid-column-gap": "24px",
+      "grid-row-gap": "24px",
+      "grid-auto-columns": "1fr",
+      "z-index": "1",
     },
     "grid-column-none": {
       "grid-column-gap": "0",
@@ -199,6 +208,9 @@ const options: Omit<Options, "selfURL"> = {
       "margin-right": "auto",
       "padding-left": "24px",
       "padding-right": "24px",
+    },
+    "forPosts": {
+      "backgroundImage": "linear-gradient(transparent,#000)",
     },
   },
 };

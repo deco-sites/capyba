@@ -39,6 +39,7 @@
               "deco-sites/capyba/sections/InteractiveBanner.tsx",
               "deco-sites/capyba/sections/Marcas.tsx",
               "deco-sites/capyba/sections/Pattern.tsx",
+              "deco-sites/capyba/sections/Posts.tsx",
               "deco-sites/capyba/sections/WorkTogether.tsx",
               "$live/matchers/MatchAlways.ts",
               "$live/matchers/MatchDate.ts",
@@ -1133,6 +1134,89 @@
       ],
       "title": "deco-sites/capyba/sections/Pattern.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUG9zdHMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "link1": {
+          "type": "string",
+          "title": "Link1"
+        },
+        "img1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Img1"
+        },
+        "link2": {
+          "type": "string",
+          "title": "Link2"
+        },
+        "img2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Img2"
+        },
+        "country1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Country1"
+        },
+        "name1": {
+          "type": "string",
+          "title": "Name1"
+        },
+        "date1": {
+          "type": "string",
+          "title": "Date1"
+        },
+        "content1": {
+          "type": "string",
+          "title": "Content1"
+        },
+        "country2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Country2"
+        },
+        "name2": {
+          "type": "string",
+          "title": "Name2"
+        },
+        "date2": {
+          "type": "string",
+          "title": "Date2"
+        },
+        "content2": {
+          "type": "string",
+          "title": "Content2"
+        },
+        "linkViewMore": {
+          "type": "string",
+          "title": "Link View More"
+        },
+        "viewMore": {
+          "type": "string",
+          "title": "View More"
+        }
+      },
+      "required": [
+        "title",
+        "link1",
+        "img1",
+        "link2",
+        "img2",
+        "country1",
+        "name1",
+        "date1",
+        "content1",
+        "country2",
+        "name2",
+        "date2",
+        "content2",
+        "linkViewMore",
+        "viewMore"
+      ],
+      "title": "deco-sites/capyba/sections/Posts.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvV29ya1RvZ2V0aGVyLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -1942,6 +2026,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUG9zdHMudHN4": {
+      "title": "deco-sites/capyba/sections/Posts.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUG9zdHMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/Posts.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/Posts.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvV29ya1RvZ2V0aGVyLnRzeA==": {
       "title": "deco-sites/capyba/sections/WorkTogether.tsx",
       "type": "object",
@@ -2323,6 +2428,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGF0dGVybi50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUG9zdHMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvV29ya1RvZ2V0aGVyLnRzeA=="
