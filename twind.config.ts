@@ -70,7 +70,7 @@ const options: Omit<Options, "selfURL"> = {
       backgroundSize: {
         "bgFirst": "88%",
         "bgFirstDesk": "50%",
-      },
+      }
     },
   },
   preflight: (preflight) => ({
@@ -211,6 +211,13 @@ const options: Omit<Options, "selfURL"> = {
       "justify-content": "stretch",
       "align-items": "center",
       "justify-items": "center",
+      "display": "grid",
+    },
+    "text-with-description-grid": {
+      "grid-column-gap": "49px",
+      "grid-template-columns": ".75fr 1fr",
+      "justify-items": "center",
+      "grid-template-rows": "auto",
       "display": "grid",
     },
   },
