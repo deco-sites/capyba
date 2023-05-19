@@ -18,7 +18,7 @@ export default function WorkTogether({
       style={{
         backgroundImage: `url(${backgroundImg})`,
       }}
-      class="bg-[100%] bg-fixed bg-no-repeat bg-auto py-[200px] ml:py-[400px]"
+      class="bg-[100%] bg-scroll ml:bg-fixed bg-no-repeat bg-auto py-[200px] ml:py-[400px]"
     >
       <div class="max-w-[1296px] mx-[10px] sm:mx-auto">
         <div class="max-w-[800px] mx-auto w-full">
