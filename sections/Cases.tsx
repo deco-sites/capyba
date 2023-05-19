@@ -87,12 +87,13 @@ export default function Cases({ title, cases, mode, viewMore }: Props) {
   const decideWhichRender = () => {
     const child = cases.map((_case, index) => (
       <div
-        class={`flex flex-col sm:flex-row sm:gap-[16px] mt-[40px] w-full sm:grid-cases group ${
+        class={`flex flex-col sm:flex-row sm:gap-[16px] mt-[40px] w-full sm:grid-cases ${
           mode === "columns" && "px-[10px] sm:px-0"
         }`}
       >
         <img
-          class={`w-full  ${
+          class={`w-full ${
+            mode === "columns" &&
             index % 2 !== 0 && "sm:col-start-2 sm:row-start-1"
           }`}
           src={_case.image}
@@ -100,6 +101,7 @@ export default function Cases({ title, cases, mode, viewMore }: Props) {
         />
         <div
           class={`flex flex-col ${
+            mode === "columns" &&
             index % 2 !== 0 && "sm:col-start-1 sm:row-start-1"
           }`}
         >
@@ -124,18 +126,20 @@ export default function Cases({ title, cases, mode, viewMore }: Props) {
             ))}
           </ul>
           <a
-            class="mt-[30px] h-[55px] flex items-center justify-center bg-highlight-light rounded-[35px] text-center sm:w-max sm:pt-[15px] sm:pr-[20px] sm:pb-[8px] sm:pl-[40px] sm:items-start"
+            class="mt-[30px] h-[55px] flex items-center justify-center bg-highlight-light rounded-[35px] text-center sm:w-max sm:pt-[15px] sm:pr-[20px] sm:pb-[8px] sm:pl-[40px] sm:items-start group"
             href={_case.action.link}
           >
-            <span class="inline-block text-highlight font-sans pr-[20px] font-semibold text-[16px]">
+            <span class="inline-block text-highlight font-sans font-semibold text-[16px] sm:relative">
               {_case.action.text}
+              <img
+                loading="lazy"
+                class="ml-[20px] inline-block"
+                src="/green-arrow-right.png"
+                alt="Capyba"
+              />
+              <span class="bg-highlight h-[2px] w-[0px] absolute bottom-0 left-0 transition-all group-hover:w-full">
+              </span>
             </span>
-            <img
-              loading="lazy"
-              class="inline-block mt-[5px]"
-              src="/green-arrow-right.png"
-              alt="Capyba"
-            />
           </a>
         </div>
       </div>
