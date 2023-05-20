@@ -14,7 +14,7 @@ export interface Props {
 export default function OurProcess({ title, process, balloonTxt }: Props) {
   return (
     <div class="bg-ourprocess pb-[60px] sm:pb-[140px] sm:mt-[140px]">
-      <div class="max-w-[1296px] w-full mx-auto block relative">
+      <div id="process" class="max-w-[1296px] w-full mx-auto block relative">
         <div class="pt-[20px] text-center max-w-[612px] flex flex-col items-center mx-auto">
           <h1 class="text-[32px] sm:text-[46px] leading-[39px] text-center mt-[40px] text-primary font-sans font-bold pb-[10px]">
             {title}
