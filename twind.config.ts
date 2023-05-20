@@ -250,6 +250,7 @@ const options: Omit<Options, "selfURL"> = {
     },
     "text-with-description-grid": {
       "grid-column-gap": "49px",
+      "grid-row-gap": "16px",
       "grid-template-columns": ".75fr 1fr",
       "justify-items": "center",
       "grid-template-rows": "auto",
