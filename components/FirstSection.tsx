@@ -31,7 +31,7 @@ export default function FirstSection({ text, btnText, backgroundImg }: Props) {
           </div>
 
           <div class="my-[10px] mr-[40px] pl-0">
-            <h1 class="ml-0 mb-0 pr-[10px] font-manrope text-[25px] sm:text-[35px] leading-[31px] sm:leading-[38px] sm:ml-[20px] backdropFilter text-white">
+            <h1 class="ml-0 mb-0 pr-[10px] font-manrope text-[25px] sm:text-[35px] md:text-[32px] md:font-bold leading-[31px] sm:leading-[38px] sm:ml-[20px] ml:ml-0 backdropFilter text-white">
               {text}
             </h1>
           </div>
