@@ -54,6 +54,7 @@ const options: Omit<Options, "selfURL"> = {
         "card": "0 0 20px 2px rgba(0,0,0,.07)",
         "assistancedesk": "inset 100px 0 100px 100px rgba(0,232,97,.32)",
         "feedbacks": "1px 1px 50px -10px rgba(0,0,0,.2)",
+        "person-card": "-4px 13px 35px -20px rgba(0,0,0,.47)",
       },
       fontSize: {
         title: ["32px", "39px"],
@@ -76,7 +77,7 @@ const options: Omit<Options, "selfURL"> = {
       backgroundSize: {
         "bgFirst": "88%",
         "bgFirstDesk": "50%",
-      }
+      },
     },
   },
   preflight: (preflight) => ({
@@ -253,6 +254,39 @@ const options: Omit<Options, "selfURL"> = {
       "justify-items": "center",
       "grid-template-rows": "auto",
       "display": "grid",
+    },
+    "team-grid": {
+      display: "grid",
+      "grid-column-gap": "24px",
+      "grid-row-gap": "87px",
+      "grid-template-rows": "auto",
+      "grid-template-columns": "1fr",
+      "grid-auto-columns": "1fr",
+      "align-content": "stretch",
+    },
+    "team-grid-sm": {
+      "grid-template-columns": "1fr 1fr",
+    },
+    "team-grid-md": {
+      "grid-template-columns": "1fr 1fr 1fr",
+    },
+    "person-card-hsm": {
+      "background-color": "#00e963",
+      "border-radius": "15px",
+      "padding": "0 20px 20px",
+      "transform": "scale3d(.9,.9,.8)rotate(-3deg)",
+      "box-shadow": "-4px 13px 35px -20px rgba(0,0,0,.47)",
+      "transition": "transform .2s",
+    },
+    "banner-with-text": {
+      "display": "grid",
+      "grid-template-columns": "1fr",
+      "grid-template-rows": "auto",
+    },
+    "banner-with-text-md": {
+      "display": "grid",
+      "grid-template-columns": "1fr 1fr",
+      "grid-template-rows": "auto",
     },
   },
 };

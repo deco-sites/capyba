@@ -28,6 +28,8 @@
               "$live/sections/UseSlot.tsx",
               "deco-sites/capyba/sections/Aside.tsx",
               "deco-sites/capyba/sections/Assistance.tsx",
+              "deco-sites/capyba/sections/BannerCard.tsx",
+              "deco-sites/capyba/sections/BannerWithText.tsx",
               "deco-sites/capyba/sections/Cards.tsx",
               "deco-sites/capyba/sections/CareersFooter.tsx",
               "deco-sites/capyba/sections/Cases.tsx",
@@ -42,6 +44,7 @@
               "deco-sites/capyba/sections/Marcas.tsx",
               "deco-sites/capyba/sections/PageTitle.tsx",
               "deco-sites/capyba/sections/Pattern.tsx",
+              "deco-sites/capyba/sections/People.tsx",
               "deco-sites/capyba/sections/Posts.tsx",
               "deco-sites/capyba/sections/TextWithDescription.tsx",
               "deco-sites/capyba/sections/WorkTogether.tsx",
@@ -460,6 +463,101 @@
         "mainImage"
       ],
       "title": "deco-sites/capyba/sections/Assistance.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQmFubmVyQ2FyZC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "background": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background"
+        },
+        "card": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "title": "Text"
+            },
+            "icon": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Icon"
+            }
+          },
+          "required": [
+            "text",
+            "icon"
+          ],
+          "title": "Card"
+        }
+      },
+      "required": [
+        "background",
+        "card"
+      ],
+      "title": "deco-sites/capyba/sections/BannerCard.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQmFubmVyV2l0aFRleHQudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "banner": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Banner"
+        },
+        "text": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Title"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Description"
+            },
+            "action": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Text"
+                },
+                "link": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Link"
+                }
+              },
+              "required": [],
+              "title": "Action"
+            }
+          },
+          "required": [],
+          "title": "Text"
+        }
+      },
+      "required": [
+        "banner",
+        "text"
+      ],
+      "title": "deco-sites/capyba/sections/BannerWithText.tsx@Props"
     },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZHMudHN4@Props": {
       "type": "object",
@@ -1276,6 +1374,41 @@
       ],
       "title": "deco-sites/capyba/sections/Pattern.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGVvcGxlLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "people": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "picture": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Picture"
+              },
+              "name": {
+                "type": "string",
+                "title": "Name"
+              },
+              "role": {
+                "type": "string",
+                "title": "Role"
+              }
+            },
+            "required": [
+              "picture",
+              "name",
+              "role"
+            ]
+          },
+          "title": "People"
+        }
+      },
+      "required": [
+        "people"
+      ],
+      "title": "deco-sites/capyba/sections/People.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUG9zdHMudHN4@Props": {
       "type": "object",
       "properties": {
@@ -2067,6 +2200,48 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQmFubmVyQ2FyZC50c3g=": {
+      "title": "deco-sites/capyba/sections/BannerCard.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQmFubmVyQ2FyZC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/BannerCard.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/BannerCard.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQmFubmVyV2l0aFRleHQudHN4": {
+      "title": "deco-sites/capyba/sections/BannerWithText.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQmFubmVyV2l0aFRleHQudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/BannerWithText.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/BannerWithText.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZHMudHN4": {
       "title": "deco-sites/capyba/sections/Cards.tsx",
       "type": "object",
@@ -2358,6 +2533,27 @@
             "deco-sites/capyba/sections/Pattern.tsx"
           ],
           "default": "deco-sites/capyba/sections/Pattern.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGVvcGxlLnRzeA==": {
+      "title": "deco-sites/capyba/sections/People.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGVvcGxlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/People.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/People.tsx"
         }
       }
     },
@@ -2753,6 +2949,12 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQXNzaXN0YW5jZS50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQmFubmVyQ2FyZC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQmFubmVyV2l0aFRleHQudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2FyZHMudHN4"
         },
         {
@@ -2793,6 +2995,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGF0dGVybi50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGVvcGxlLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUG9zdHMudHN4"
