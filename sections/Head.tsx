@@ -124,6 +124,10 @@ export default function HeadComponent({
             font-style: normal
           }
 
+          html {
+            scroll-behavior: smooth;
+          }
+
           body {
             background-color: ${bodyBackgroundColorMobile};
           }

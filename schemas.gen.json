@@ -1530,6 +1530,27 @@
           ],
           "type": "string",
           "title": "Mobile Order"
+        },
+        "anchors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string",
+                "title": "Text"
+              },
+              "rootId": {
+                "type": "string",
+                "title": "Root Id"
+              }
+            },
+            "required": [
+              "text",
+              "rootId"
+            ]
+          },
+          "title": "Anchors"
         }
       },
       "required": [
