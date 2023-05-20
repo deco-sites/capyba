@@ -24,7 +24,8 @@ export default function Feedbacks({
           <h3
             class="mt-[140px] mb-[100px] sm:mt-0 pt-[60px] text-center text-primary font-sans font-bold text-[32px] md:text-[54px] sm:text-[40px] leading-[36px] sm:leading-[44px] md:leading-[54px]"
             dangerouslySetInnerHTML={{ __html: title }}
-          ></h3>
+          >
+          </h3>
         </div>
       </div>
 

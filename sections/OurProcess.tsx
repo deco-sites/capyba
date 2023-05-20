@@ -34,11 +34,13 @@ export default function OurProcess({ title, process, balloonTxt }: Props) {
                 <h3
                   class="mb-[18px] text-primary font-sans font-bold text-center sm:text-left mx-2.5 text-[32px] sm:text-[46px] leading-[39px] sm:leading-[55px]"
                   dangerouslySetInnerHTML={{ __html: process.title }}
-                ></h3>
+                >
+                </h3>
                 <div
                   class="text-justify mx-2.5 font-sans text-[20px] leading-[33px]"
                   dangerouslySetInnerHTML={{ __html: process.content }}
-                ></div>
+                >
+                </div>
               </div>
             </div>
 
@@ -53,7 +55,8 @@ export default function OurProcess({ title, process, balloonTxt }: Props) {
                   "self-center pt-[20px] pl-[20px] pr-[30px] sm:pl-[100px] sm:pr-0 sm:pt-0"
                 }`}
                 src={process.img}
-              ></img>
+              >
+              </img>
             </div>
           </div>
         );
@@ -68,7 +71,8 @@ export default function OurProcess({ title, process, balloonTxt }: Props) {
           <div
             dangerouslySetInnerHTML={{ __html: balloonTxt }}
             class="w-auto mt-auto ml:mt-[-90px] px-[10px] pt-[10px] inline-block sm:w-[90%] text-primary text-justify font-sans text-[16px] sm:text-[20px] leading-[24px] sm:leading-[33px] font-normal tracking-[-.01em]"
-          ></div>
+          >
+          </div>
         </div>
       </div>
     </div>

@@ -42,7 +42,8 @@ export default function Posts({
           <h5
             class="text-primary text-center pt-[140px] px-[10px] text-[32px] sm:text-[40px] leading-[36px] sm:leading-[44px] md:text-[54px] md:leading-[54px] font-sans font-bold pb-[100px]"
             dangerouslySetInnerHTML={{ __html: title }}
-          ></h5>
+          >
+          </h5>
         </div>
       </div>
 
@@ -56,7 +57,8 @@ export default function Posts({
               <img
                 class="hoverPosts group-hover:hoverPostsFinal w-full h-full object-cover relative "
                 src={img1}
-              ></img>
+              >
+              </img>
               <div class="z-[1] w-full text-white p-[36px] absolute bottom-0">
                 <div class="flex items-center mb-[18px]">
                   <img class="mr-2.5" src={country1} />
@@ -73,7 +75,8 @@ export default function Posts({
                   {content1}
                 </h3>
               </div>
-              <div class="group-hover:h-[100%] transition-all bg-primary h-[70%] w-full absolute bottom-0 opacity-90 forPosts bg-transparent"></div>
+              <div class="group-hover:h-[100%] transition-all bg-primary h-[70%] w-full absolute bottom-0 opacity-90 forPosts bg-transparent">
+              </div>
             </a>
           </div>
           <div class="group">
@@ -85,7 +88,8 @@ export default function Posts({
                 <img
                   class="hoverPosts group-hover:hoverPostsFinal w-full h-full object-cover relative "
                   src={img2}
-                ></img>
+                >
+                </img>
                 <div class="z-[1] w-full text-white p-[36px] absolute bottom-0">
                   <div class="flex items-center mb-[18px]">
                     <img class="mr-2.5" src={country2} />
@@ -102,7 +106,8 @@ export default function Posts({
                     {content2}
                   </h3>
                 </div>
-                <div class="group-hover:h-[100%] transition-all bg-primary h-[70%] w-full absolute bottom-0 opacity-90 forPosts bg-transparent"></div>
+                <div class="group-hover:h-[100%] transition-all bg-primary h-[70%] w-full absolute bottom-0 opacity-90 forPosts bg-transparent">
+                </div>
               </a>
             </div>
           </div>
