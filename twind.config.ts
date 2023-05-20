@@ -36,6 +36,7 @@ const options: Omit<Options, "selfURL"> = {
         "light-grey": "rgba(221,221,221,.5)",
         "dots": "rgba(34,34,34,.4)",
         "dots-active": "#222",
+        "ourprocess": "#f6f6f6",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
@@ -73,6 +74,7 @@ const options: Omit<Options, "selfURL"> = {
         "footerMobile": "1.5fr 1.75fr;",
         "footerDesk": ".25fr 1fr;",
         "postsMobile": "1fr",
+        "development": "1.5fr 1fr",
       },
       backgroundSize: {
         "bgFirst": "88%",
@@ -140,6 +142,9 @@ const options: Omit<Options, "selfURL"> = {
       "grid-row-gap": "24px",
       "grid-auto-columns": "1fr",
       "z-index": "1",
+    },
+    "grid-row-none": {
+      "grid-row-gap": "0",
     },
     "grid-column-none": {
       "grid-column-gap": "0",

@@ -34,6 +34,7 @@
               "deco-sites/capyba/sections/CareersFooter.tsx",
               "deco-sites/capyba/sections/Cases.tsx",
               "deco-sites/capyba/sections/CloseButton.tsx",
+              "deco-sites/capyba/sections/DevelopmentProcess.tsx",
               "deco-sites/capyba/sections/Feedbacks.tsx",
               "deco-sites/capyba/sections/Footer.tsx",
               "deco-sites/capyba/sections/Form.tsx",
@@ -42,6 +43,7 @@
               "deco-sites/capyba/sections/Header.tsx",
               "deco-sites/capyba/sections/InteractiveBanner.tsx",
               "deco-sites/capyba/sections/Marcas.tsx",
+              "deco-sites/capyba/sections/OurProcess.tsx",
               "deco-sites/capyba/sections/PageTitle.tsx",
               "deco-sites/capyba/sections/Pattern.tsx",
               "deco-sites/capyba/sections/People.tsx",
@@ -840,6 +842,39 @@
       ],
       "title": "deco-sites/capyba/sections/CloseButton.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRGV2ZWxvcG1lbnRQcm9jZXNzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "content": {
+          "type": "string",
+          "title": "Content"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "balloonTxt": {
+          "type": "string",
+          "title": "Balloon Txt"
+        },
+        "balloonImg": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Balloon Img"
+        }
+      },
+      "required": [
+        "title",
+        "content",
+        "image",
+        "balloonTxt",
+        "balloonImg"
+      ],
+      "title": "deco-sites/capyba/sections/DevelopmentProcess.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRmVlZGJhY2tzLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -1347,6 +1382,58 @@
         "banners"
       ],
       "title": "deco-sites/capyba/sections/Marcas.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvT3VyUHJvY2Vzcy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "process": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "img": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Img"
+              },
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "content": {
+                "type": "string",
+                "title": "Content"
+              },
+              "invertOrder": {
+                "type": [
+                  "boolean",
+                  "null"
+                ],
+                "title": "Invert Order"
+              }
+            },
+            "required": [
+              "img",
+              "title",
+              "content"
+            ]
+          },
+          "title": "Process"
+        },
+        "balloonTxt": {
+          "type": "string",
+          "title": "Balloon Txt"
+        }
+      },
+      "required": [
+        "title",
+        "process",
+        "balloonTxt"
+      ],
+      "title": "deco-sites/capyba/sections/OurProcess.tsx@Props"
     },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGFnZVRpdGxlLnRzeA==@Props": {
       "type": "object",
@@ -2347,6 +2434,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRGV2ZWxvcG1lbnRQcm9jZXNzLnRzeA==": {
+      "title": "deco-sites/capyba/sections/DevelopmentProcess.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRGV2ZWxvcG1lbnRQcm9jZXNzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/DevelopmentProcess.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/DevelopmentProcess.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRmVlZGJhY2tzLnRzeA==": {
       "title": "deco-sites/capyba/sections/Feedbacks.tsx",
       "type": "object",
@@ -2512,6 +2620,27 @@
             "deco-sites/capyba/sections/Marcas.tsx"
           ],
           "default": "deco-sites/capyba/sections/Marcas.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvT3VyUHJvY2Vzcy50c3g=": {
+      "title": "deco-sites/capyba/sections/OurProcess.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvT3VyUHJvY2Vzcy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/capyba/sections/OurProcess.tsx"
+          ],
+          "default": "deco-sites/capyba/sections/OurProcess.tsx"
         }
       }
     },
@@ -2988,6 +3117,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvQ2xvc2VCdXR0b24udHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRGV2ZWxvcG1lbnRQcm9jZXNzLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvRmVlZGJhY2tzLnRzeA=="
         },
         {
@@ -3010,6 +3142,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvTWFyY2FzLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvT3VyUHJvY2Vzcy50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvUGFnZVRpdGxlLnRzeA=="
