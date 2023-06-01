@@ -24,14 +24,14 @@ export default function Feedbacks({
           <h3
             class="mt-[140px] mb-[100px] sm:mt-0 pt-[60px] text-center text-primary font-sans font-bold text-[32px] md:text-[54px] sm:text-[40px] leading-[36px] sm:leading-[44px] md:leading-[54px]"
             dangerouslySetInnerHTML={{ __html: title }}
-          >
-          </h3>
+          ></h3>
         </div>
       </div>
 
       <img
         class="hidden md:block absolute w-[25vw] right-[90%] top-[20%]"
-        src="/cover-green.png"
+        src="/cover-green.webp"
+        loading="lazy"
       />
 
       <div class="pb-[72px] ml:pb-0 mx-2.5 sm:mx-0">
@@ -40,6 +40,7 @@ export default function Feedbacks({
             <img
               class="rounded-[30px] md:rounded-[60px] max-w-[90%] md:max-w-[100%]"
               src={mainImage}
+              loading="lazy"
             />
           </div>
           <a
@@ -49,7 +50,8 @@ export default function Feedbacks({
             <div class="py-[20px] pl-[20px] pr-[20px] sm:pr-0 md:pt-[60px] md:pl-[40px] md:pb-[20px] mt-[30px] sm:mt-0 rounded-[30px] md:rounded-[60px] max-w-[610px] bg-white shadow-feedbacks">
               <img
                 class="block mr-[-19px] mt-[-40px] w-[50px] float-right sm:hidden md:block md:relative md:bottom-[49px] md:w-max"
-                src="/depoimento-icon.png"
+                src="/depoimento-icon.webp"
+                loading="lazy"
               />
               <div class="mt-auto w-auto sm:w-[90%] text-justify pt-[10px] pr-[10px] pl-[10px] sm:p-0 text-[16px] sm:text-[20px] leading-[24px] sm:leading-[33px] text-primary font-sans font-normal">
                 {content}
