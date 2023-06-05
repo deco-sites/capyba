@@ -36,7 +36,11 @@ const options: Omit<Options, "selfURL"> = {
         "light-grey": "rgba(221,221,221,.5)",
         "dots": "rgba(34,34,34,.4)",
         "dots-active": "#222",
+        "dots-services": "rgba(255,255,255,.4)",
         "ourprocess": "#f6f6f6",
+        "fullslider": "#252525",
+        "slideborder": "#1c1c1c",
+        "subtitleslide": "#8a8a8a",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
@@ -75,6 +79,7 @@ const options: Omit<Options, "selfURL"> = {
         "footerDesk": ".25fr 1fr;",
         "postsMobile": "1fr",
         "development": "1.5fr 1fr",
+        "worldClients": "1fr 1fr 1fr 1fr",
       },
       backgroundSize: {
         "bgFirst": "88%",
@@ -142,6 +147,14 @@ const options: Omit<Options, "selfURL"> = {
       "grid-row-gap": "24px",
       "grid-auto-columns": "1fr",
       "z-index": "1",
+    },
+    "grid-services-desktop": {
+      "grid-column-gap": "24px",
+      "grid-row-gap": "24px",
+      "grid-template-rows": "auto auto",
+      "grid-template-columns": "1fr 1fr 1fr",
+      "grid-auto-columns": "1fr",
+      "display": "grid",
     },
     "grid-row-none": {
       "grid-row-gap": "0",
@@ -293,6 +306,24 @@ const options: Omit<Options, "selfURL"> = {
       "display": "grid",
       "grid-template-columns": "1fr 1fr",
       "grid-template-rows": "auto",
+    },
+    "services-border": {
+      "border-top-right-radius": "60px",
+      "border-bottom-right-radius": "60px",
+    },
+    "services-border-invert": {
+      "border-top-right-radius": "0px",
+      "border-bottom-right-radius": "0px",
+      "border-top-left-radius": "60px",
+      "border-bottom-left-radius": "60px",
+    },
+    "grid-worldmap": {
+      "grid-column-gap": "6px",
+      "grid-row-gap": "16px",
+      "grid-template-rows": "auto auto",
+      "grid-template-columns": "1fr 1fr",
+      "grid-auto-columns": "1fr",
+      "display": "grid",
     },
   },
 };

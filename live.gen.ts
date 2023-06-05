@@ -22,18 +22,21 @@ import * as $$$$$$$$8 from "./sections/DevelopmentProcess.tsx";
 import * as $$$$$$$$9 from "./sections/Feedbacks.tsx";
 import * as $$$$$$$$10 from "./sections/Footer.tsx";
 import * as $$$$$$$$11 from "./sections/Form.tsx";
-import * as $$$$$$$$12 from "./sections/GetStarted.tsx";
-import * as $$$$$$$$13 from "./sections/Head.tsx";
-import * as $$$$$$$$14 from "./sections/Header.tsx";
-import * as $$$$$$$$15 from "./sections/InteractiveBanner.tsx";
-import * as $$$$$$$$16 from "./sections/Marcas.tsx";
-import * as $$$$$$$$17 from "./sections/OurProcess.tsx";
-import * as $$$$$$$$18 from "./sections/PageTitle.tsx";
-import * as $$$$$$$$19 from "./sections/Pattern.tsx";
-import * as $$$$$$$$20 from "./sections/People.tsx";
-import * as $$$$$$$$21 from "./sections/Posts.tsx";
-import * as $$$$$$$$22 from "./sections/TextWithDescription.tsx";
-import * as $$$$$$$$23 from "./sections/WorkTogether.tsx";
+import * as $$$$$$$$12 from "./sections/FullSlider.tsx";
+import * as $$$$$$$$13 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$14 from "./sections/Head.tsx";
+import * as $$$$$$$$15 from "./sections/Header.tsx";
+import * as $$$$$$$$16 from "./sections/InteractiveBanner.tsx";
+import * as $$$$$$$$17 from "./sections/Marcas.tsx";
+import * as $$$$$$$$18 from "./sections/OurProcess.tsx";
+import * as $$$$$$$$19 from "./sections/PageTitle.tsx";
+import * as $$$$$$$$20 from "./sections/Pattern.tsx";
+import * as $$$$$$$$21 from "./sections/People.tsx";
+import * as $$$$$$$$22 from "./sections/Posts.tsx";
+import * as $$$$$$$$23 from "./sections/Services.tsx";
+import * as $$$$$$$$24 from "./sections/TextWithDescription.tsx";
+import * as $$$$$$$$25 from "./sections/WorkTogether.tsx";
+import * as $$$$$$$$26 from "./sections/WorldClients.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -100,18 +103,21 @@ const manifest = {
     "deco-sites/capyba/sections/Feedbacks.tsx": $$$$$$$$9,
     "deco-sites/capyba/sections/Footer.tsx": $$$$$$$$10,
     "deco-sites/capyba/sections/Form.tsx": $$$$$$$$11,
-    "deco-sites/capyba/sections/GetStarted.tsx": $$$$$$$$12,
-    "deco-sites/capyba/sections/Head.tsx": $$$$$$$$13,
-    "deco-sites/capyba/sections/Header.tsx": $$$$$$$$14,
-    "deco-sites/capyba/sections/InteractiveBanner.tsx": $$$$$$$$15,
-    "deco-sites/capyba/sections/Marcas.tsx": $$$$$$$$16,
-    "deco-sites/capyba/sections/OurProcess.tsx": $$$$$$$$17,
-    "deco-sites/capyba/sections/PageTitle.tsx": $$$$$$$$18,
-    "deco-sites/capyba/sections/Pattern.tsx": $$$$$$$$19,
-    "deco-sites/capyba/sections/People.tsx": $$$$$$$$20,
-    "deco-sites/capyba/sections/Posts.tsx": $$$$$$$$21,
-    "deco-sites/capyba/sections/TextWithDescription.tsx": $$$$$$$$22,
-    "deco-sites/capyba/sections/WorkTogether.tsx": $$$$$$$$23,
+    "deco-sites/capyba/sections/FullSlider.tsx": $$$$$$$$12,
+    "deco-sites/capyba/sections/GetStarted.tsx": $$$$$$$$13,
+    "deco-sites/capyba/sections/Head.tsx": $$$$$$$$14,
+    "deco-sites/capyba/sections/Header.tsx": $$$$$$$$15,
+    "deco-sites/capyba/sections/InteractiveBanner.tsx": $$$$$$$$16,
+    "deco-sites/capyba/sections/Marcas.tsx": $$$$$$$$17,
+    "deco-sites/capyba/sections/OurProcess.tsx": $$$$$$$$18,
+    "deco-sites/capyba/sections/PageTitle.tsx": $$$$$$$$19,
+    "deco-sites/capyba/sections/Pattern.tsx": $$$$$$$$20,
+    "deco-sites/capyba/sections/People.tsx": $$$$$$$$21,
+    "deco-sites/capyba/sections/Posts.tsx": $$$$$$$$22,
+    "deco-sites/capyba/sections/Services.tsx": $$$$$$$$23,
+    "deco-sites/capyba/sections/TextWithDescription.tsx": $$$$$$$$24,
+    "deco-sites/capyba/sections/WorkTogether.tsx": $$$$$$$$25,
+    "deco-sites/capyba/sections/WorldClients.tsx": $$$$$$$$26,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i1$0,
