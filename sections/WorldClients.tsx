@@ -2,23 +2,15 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
   image: LiveImage;
-  title: string;
   places: {
     continente: string;
     país: string;
   }[];
 }
 
-export default function WorldClients({ image, places, title }: Props) {
+export default function WorldClients({ image, places }: Props) {
   return (
     <>
-      <div class="flex justify-center items-center w-full mb-[48px] mt-[60px] mt-[160px] mb-[40px]">
-        <h1
-          dangerouslySetInnerHTML={{ __html: title }}
-          class="font-sans text-center text-[39px] sm:text-[46px] leading-[48px] sm:leading-[55px] font-bold block text-primary"
-        >
-        </h1>
-      </div>
       <div class="px-5 sm:px-0 max-w-[1062px] mt-[100px] mx-auto mb-[90px] block">
         <img src={image} />
       </div>

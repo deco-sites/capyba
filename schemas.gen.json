@@ -1476,6 +1476,10 @@
     "ZGVjby1zaXRlcy9jYXB5YmEvc2VjdGlvbnMvTWFyY2FzLnRzeA==@Props": {
       "type": "object",
       "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
         "banners": {
           "type": "array",
           "items": {
@@ -1509,6 +1513,7 @@
         }
       },
       "required": [
+        "title",
         "banners"
       ],
       "title": "deco-sites/capyba/sections/Marcas.tsx@Props"
@@ -1937,10 +1942,6 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Image"
         },
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
         "places": {
           "type": "array",
           "items": {
@@ -1965,7 +1966,6 @@
       },
       "required": [
         "image",
-        "title",
         "places"
       ],
       "title": "deco-sites/capyba/sections/WorldClients.tsx@Props"
