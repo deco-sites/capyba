@@ -5,7 +5,7 @@ export interface Props {
   description: string;
   image: LiveImage;
   invertOrder?: boolean;
-  paddingTop: boolean;
+  paddingTop?: boolean;
 }
 
 export default function Services({
