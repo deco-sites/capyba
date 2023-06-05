@@ -16,7 +16,8 @@ export default function WorldClients({ image, places, title }: Props) {
         <h1
           dangerouslySetInnerHTML={{ __html: title }}
           class="font-sans text-center text-[39px] sm:text-[46px] leading-[48px] sm:leading-[55px] font-bold block text-primary"
-        ></h1>
+        >
+        </h1>
       </div>
       <div class="px-5 sm:px-0 max-w-[1062px] mt-[100px] mx-auto mb-[90px] block">
         <img src={image} />
