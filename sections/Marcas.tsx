@@ -13,7 +13,8 @@ export default function Marcas({ banners, title }: Props) {
         <h1
           dangerouslySetInnerHTML={{ __html: title }}
           class="font-sans text-center text-[39px] sm:text-[46px] leading-[48px] sm:leading-[55px] font-bold block text-primary"
-        ></h1>
+        >
+        </h1>
       </div>
       <div class="grid-footer-second grid-cols-marcas ml:grid-cols-marcasDesk">
         {banners?.map((banners) => {
