@@ -5,7 +5,7 @@ export interface Props {
   description: string;
   image: LiveImage;
   invertOrder?: boolean;
-  paddingTop: boolean;
+  paddingTop?: boolean;
 }
 
 export default function Services({
@@ -30,8 +30,7 @@ export default function Services({
           <h3
             dangerouslySetInnerHTML={{ __html: title }}
             class="text-center sm:text-left mx-[10px] text-[32px] sm:text-[46px] leading-[39px] sm:leading-[55px] font-bold text-primary font-sans mb-[18px]"
-          >
-          </h3>
+          ></h3>
           <div class="text-justify mx-[10px] sm:mx-0 font-sans text-[20px] leading-[33px]">
             {description}
           </div>
