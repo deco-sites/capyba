@@ -48,7 +48,8 @@ export default function FullSlider({
                   <h3
                     dangerouslySetInnerHTML={{ __html: content.title }}
                     class="px-5 text-[36px] leading-[48px] text-subcolor text-center font-sans font-bold pt-[140px] pb-[80px]"
-                  ></h3>
+                  >
+                  </h3>
                 )}
 
                 <div class="h-[420px] block">
@@ -84,7 +85,8 @@ export default function FullSlider({
                     </Slider>
                     <SliderDots class="mt-[60px]">
                       {content.cards?.map((_) => (
-                        <div class="w-[16px] h-[16px] bg-dots-services rounded-1/2 group-disabled:bg-white mx-[3px]"></div>
+                        <div class="w-[16px] h-[16px] bg-dots-services rounded-1/2 group-disabled:bg-white mx-[3px]">
+                        </div>
                       ))}
                     </SliderDots>
                     <SliderControllerJS rootId={`content-${index}-${id}`} />
@@ -119,7 +121,8 @@ export default function FullSlider({
             <h3
               dangerouslySetInnerHTML={{ __html: customDesktopTitle }}
               class="px-5 text-[46px] leading-[55px] text-subcolor text-center font-sans font-bold pt-[140px] pb-[80px]"
-            ></h3>
+            >
+            </h3>
           )}
           <Slider
             style={{
@@ -167,7 +170,8 @@ export default function FullSlider({
           </Slider>
           <SliderDots class="mt-[60px]">
             {contentsDesktop?.map((_) => (
-              <div class="w-[16px] h-[16px] bg-dots-services rounded-1/2 group-disabled:bg-white mx-[3px]"></div>
+              <div class="w-[16px] h-[16px] bg-dots-services rounded-1/2 group-disabled:bg-white mx-[3px]">
+              </div>
             ))}
           </SliderDots>
           <SliderControllerJS rootId={`content-desktop-${id}`} />
