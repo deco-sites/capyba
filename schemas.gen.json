@@ -1477,7 +1477,10 @@
       "type": "object",
       "properties": {
         "title": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Title"
         },
         "banners": {
@@ -1513,7 +1516,6 @@
         }
       },
       "required": [
-        "title",
         "banners"
       ],
       "title": "deco-sites/capyba/sections/Marcas.tsx@Props"
